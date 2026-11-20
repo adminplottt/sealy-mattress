@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { GOOGLE_SHEET_URL } from '../../config';
 
 const PREFERENCES = [
   'Back Support',
@@ -30,6 +31,7 @@ export default function ClaimOfferModal({ isOpen, onClose }) {
     preferences: ['Back Support'],
   });
   const [isPhoneInvalid, setIsPhoneInvalid] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -83,18 +85,45 @@ export default function ClaimOfferModal({ isOpen, onClose }) {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.phone || !/^[6-9]\d{9}$/.test(formData.phone)) {
       setIsPhoneInvalid(true);
       return;
     }
     setIsPhoneInvalid(false);
+    setIsSubmitting(true);
+
+    const payload = {
+      name: formData.name,
+      phone: formData.phone,
+      city: formData.city,
+      preferences: formData.preferences,
+      timestamp: new Date().toISOString(),
+    };
+
+    if (GOOGLE_SHEET_URL) {
+      try {
+        await fetch(GOOGLE_SHEET_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    setIsSubmitting(false);
     setSubmitted(true);
   };
 
   const handleReset = () => {
     setSubmitted(false);
+    setIsSubmitting(false);
     setIsPhoneInvalid(false);
     setFormData({
       name: '',
@@ -245,9 +274,10 @@ export default function ClaimOfferModal({ isOpen, onClose }) {
 
             <button
               type="submit"
-              className="w-full h-[45px] bg-[#25364A] hover:bg-[#1d2b3b] active:scale-[0.99] text-white rounded-[10px] font-inter font-medium text-[18px] leading-[22px] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25364A]"
+              disabled={isSubmitting}
+              className="w-full h-[45px] bg-[#25364A] hover:bg-[#1d2b3b] active:scale-[0.99] disabled:opacity-70 disabled:cursor-not-allowed text-white rounded-[10px] font-inter font-medium text-[18px] leading-[22px] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25364A]"
             >
-              Submit
+              {isSubmitting ? 'Submitting...' : 'Submit'}
             </button>
           </form>
         )}
