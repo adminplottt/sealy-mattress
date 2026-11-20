@@ -1,15 +1,15 @@
 export default function HeritageSection({ onClaimOffer }) {
   return (
     <section className="relative w-full min-h-[720px] bg-[#D7F0FF] overflow-hidden">
-      <div className="relative w-full max-w-[1278px] min-h-[720px] mx-auto py-12 lg:py-0 px-6 sm:px-10 lg:px-0">
-        <div className="w-full lg:w-[639px] lg:h-[720px] lg:absolute lg:left-0 lg:top-0 flex flex-col justify-center">
-          <div className="lg:absolute lg:left-[63px] lg:top-[189px]">
+      <div className="relative w-full max-w-[1440px] min-h-[720px] mx-auto py-12 lg:py-0 px-6 sm:px-10 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-12">
+        <div className="w-full lg:max-w-[550px] flex flex-col justify-center py-6 lg:py-12">
+          <div>
             <p className="font-dmsans font-semibold text-[10px] leading-[15px] tracking-[2.2px] uppercase text-[#25364A] select-none">
               Heritage & innovation
             </p>
           </div>
 
-          <div className="mt-4 lg:mt-0 lg:absolute lg:left-[63px] lg:top-[218px] w-full lg:w-[264px] lg:h-[82px] flex-none">
+          <div className="mt-4 w-full lg:w-[264px] lg:h-[82px] flex-none">
             <h2
               className="w-full lg:w-[264px] lg:h-[82px] font-gotham text-3xl sm:text-4xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] select-none"
               style={{
@@ -30,14 +30,14 @@ export default function HeritageSection({ onClaimOffer }) {
             </h2>
           </div>
 
-          <div className="mt-4 lg:mt-0 lg:absolute lg:left-[63px] lg:top-[315px] max-w-[435px]">
+          <div className="mt-4 max-w-[435px]">
             <p className="font-optima font-normal text-[15px] sm:text-[16px] leading-[22px] lg:leading-[18px] text-[#25364A]">
               From Sealy, Texas in 1881 to bedrooms around the world, our purpose has remained the
               same: helping people rest well and wake ready.
             </p>
           </div>
 
-          <div className="mt-6 lg:mt-0 lg:absolute lg:left-[63px] lg:top-[391px] w-full max-w-[473.76px] pt-3 border-t border-white/20">
+          <div className="mt-6 w-full max-w-[473.76px] pt-3 border-t border-white/20">
             <div className="grid grid-cols-3 gap-2 sm:gap-4 relative w-full">
               <div className="flex flex-col items-start">
                 <span className="font-optima font-normal text-2xl sm:text-[28px] leading-[31px] text-[#25364A]">
@@ -68,7 +68,7 @@ export default function HeritageSection({ onClaimOffer }) {
             </div>
           </div>
 
-          <div className="mt-8 lg:mt-0 lg:absolute lg:left-[63px] lg:top-[483.17px]">
+          <div className="mt-8">
             <button
               type="button"
               onClick={onClaimOffer}
@@ -81,8 +81,8 @@ export default function HeritageSection({ onClaimOffer }) {
           </div>
         </div>
 
-        <div className="mt-10 lg:mt-0 lg:absolute lg:left-[619px] lg:top-0 w-full lg:w-[657px] lg:h-[720px] flex items-center justify-center lg:justify-start">
-          <div className="relative w-full max-w-[594px] h-[360px] sm:h-[450px] lg:h-[630px] lg:w-[594px] lg:absolute lg:left-0 lg:top-[45px] overflow-hidden rounded-none shadow-sm">
+        <div className="w-full lg:w-[594px] flex items-center justify-center lg:justify-end">
+          <div className="relative w-full max-w-[594px] h-[360px] sm:h-[450px] lg:h-[630px] overflow-hidden rounded-none shadow-sm">
             <img
               src="/images/Heritage&Innovation.png"
               alt="A legacy built on better sleep"

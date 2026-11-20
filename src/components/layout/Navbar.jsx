@@ -1,7 +1,7 @@
 export default function Navbar({ onClaimOffer }) {
   return (
     <header className="absolute top-[2px] left-0 right-0 z-30 w-full border-b border-white/20">
-      <div className="w-full max-w-[1278px] mx-auto h-[101px] px-4 sm:px-8 md:px-[57.51px] flex flex-row items-center justify-between">
+      <div className="w-full max-w-[1440px] mx-auto h-[101px] px-6 sm:px-10 lg:px-12 flex flex-row items-center justify-between">
         <div className="flex-none order-0">
           <a href="/" className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 rounded">
             <img

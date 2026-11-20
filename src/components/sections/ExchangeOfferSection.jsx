@@ -11,7 +11,7 @@ export default function ExchangeOfferSection({ onClaimOffer }) {
     >
       <div className="absolute inset-0 bg-black/40 z-0 pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-[1278px] mx-auto px-6 sm:px-10 flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 flex flex-col items-center justify-center text-center">
         <div className="w-full max-w-[795px] flex flex-col items-center">
           <h2
             className="w-full lg:w-[795px] lg:h-[130px] font-gotham font-medium text-3xl sm:text-5xl lg:text-[54px] leading-tight lg:leading-[65px] text-center text-white select-none flex items-center justify-center flex-none"

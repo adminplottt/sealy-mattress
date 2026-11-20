@@ -26,8 +26,8 @@ const BULLETS = [
 export default function SpinalAlignmentSection({ onClaimOffer }) {
   return (
     <section className="relative w-full min-h-[510px] bg-[#F4F5F0] overflow-hidden py-12 lg:py-0">
-      <div className="relative w-full max-w-[1278px] min-h-[510px] mx-auto px-6 sm:px-10 lg:px-0 flex flex-col lg:block">
-        <div className="w-full lg:w-[590px] h-[280px] sm:h-[360px] lg:h-[452px] lg:absolute lg:left-[77px] lg:top-[35px] overflow-hidden rounded-none shadow-sm bg-white/40">
+      <div className="relative w-full max-w-[1440px] min-h-[510px] mx-auto px-6 sm:px-10 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 py-8 lg:py-[29px]">
+        <div className="w-full lg:w-[620px] xl:w-[650px] h-[280px] sm:h-[360px] lg:h-[452px] overflow-hidden rounded-none shadow-sm bg-white/40 flex-none">
           <img
             src="/images/Spinal alignment.png"
             alt="Spinal alignment for your best sleep"
@@ -36,7 +36,7 @@ export default function SpinalAlignmentSection({ onClaimOffer }) {
           />
         </div>
 
-        <div className="mt-8 lg:mt-0 lg:absolute lg:left-[782px] lg:top-[131px] w-full max-w-[419px] flex flex-col justify-start">
+        <div className="w-full lg:max-w-[450px] flex flex-col justify-start">
           <h2
             className="w-full lg:w-[359px] lg:h-[82px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] select-none flex-none"
             style={{

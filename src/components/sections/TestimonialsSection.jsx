@@ -37,8 +37,8 @@ const TESTIMONIALS = [
 export default function TestimonialsSection() {
   return (
     <section className="relative w-full min-h-[459px] bg-[#D7F0FF] overflow-hidden py-12 lg:py-0">
-      <div className="relative w-full max-w-[1278px] min-h-[459px] mx-auto px-6 sm:px-10 lg:px-0">
-        <div className="w-full max-w-[1127px] mx-auto text-center pt-0 lg:pt-[40px] flex flex-col items-center flex-none">
+      <div className="relative w-full max-w-[1440px] min-h-[459px] mx-auto px-6 sm:px-10 lg:px-12 flex flex-col justify-center">
+        <div className="w-full text-center pt-0 lg:pt-[40px] flex flex-col items-center flex-none">
           <h2
             className="w-full lg:w-[1127px] lg:h-[82px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] text-center select-none"
             style={{
@@ -60,12 +60,12 @@ export default function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="w-full max-w-[1100px] mx-auto mt-8 lg:mt-0 lg:absolute lg:left-[89px] lg:top-[156px]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-[25px]">
+        <div className="w-full mt-8 lg:mt-[36px] pb-0 lg:pb-[45px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {TESTIMONIALS.map((review) => (
               <div
                 key={review.id}
-                className="relative w-full lg:w-[350px] h-[238px] bg-[#FFFFFF] rounded-[4px] shadow-sm flex flex-col items-center justify-start pt-[43px] px-6 text-center select-none"
+                className="relative w-full h-[238px] bg-[#FFFFFF] rounded-[4px] shadow-sm flex flex-col items-center justify-start pt-[43px] px-6 text-center select-none"
               >
                 <FiveStars />
 
@@ -73,18 +73,13 @@ export default function TestimonialsSection() {
                   {review.title}
                 </h3>
 
-                <p className="mt-[14px] font-optima font-normal text-[12px] leading-[15px] text-[#000000] max-w-[240px]">
+                <p className="mt-[14px] font-optima font-normal text-[12px] leading-[15px] text-[#000000] max-w-[280px]">
                   {review.quote}
                 </p>
 
                 <p
-                  className="font-optima text-[16px] leading-[15px] text-center text-[#000000] whitespace-nowrap select-none"
+                  className="font-optima text-[16px] leading-[15px] text-center text-[#000000] whitespace-nowrap select-none absolute left-0 right-0 bottom-[43px]"
                   style={{
-                    position: 'absolute',
-                    width: '220px',
-                    height: '15px',
-                    left: '64.54px',
-                    top: '180px',
                     fontFamily: "'Optima', sans-serif",
                     fontStyle: 'normal',
                     fontWeight: 550,

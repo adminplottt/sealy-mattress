@@ -39,19 +39,19 @@ const STATS_DATA = [
 export default function ComfortSection() {
   return (
     <section className="relative w-full min-h-[437px] bg-[#25364A] overflow-hidden py-12 lg:py-0">
-      <div className="relative w-full max-w-[1278px] min-h-[437px] mx-auto px-6 sm:px-10 lg:px-0">
+      <div className="relative w-full max-w-[1440px] min-h-[437px] mx-auto px-6 sm:px-10 lg:px-12 flex flex-col justify-center">
         <div className="w-full flex justify-center pt-0 lg:pt-[40px]">
           <h2 className="font-gotham font-[325] text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[68px] text-center text-white select-none">
             Comfort you can count on
           </h2>
         </div>
 
-        <div className="w-full max-w-[1158px] mx-auto mt-8 lg:mt-0 lg:absolute lg:left-[60px] lg:top-[130px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row lg:justify-between gap-4 lg:gap-[14.7px]">
+        <div className="w-full mt-8 lg:mt-[36px] pb-0 lg:pb-[45px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-[18px]">
             {STATS_DATA.map((item) => (
               <article
                 key={item.id}
-                className="w-full lg:w-[219.81px] h-auto lg:h-[233.85px] min-h-[220px] lg:min-h-[230px] p-[25px_22px] bg-[#D7F0FF] rounded-[4px] flex flex-col justify-center items-start text-left shadow-sm select-none flex-none"
+                className="w-full h-auto min-h-[220px] lg:min-h-[233.85px] p-[25px_22px] bg-[#D7F0FF] rounded-[4px] flex flex-col justify-center items-start text-left shadow-sm select-none"
               >
                 <div className="flex-none order-0 w-[50px] h-[50px] flex items-center justify-start">
                   <img

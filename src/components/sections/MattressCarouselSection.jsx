@@ -3,8 +3,8 @@ import { MATTRESSES } from '../../data/mattresses';
 export default function MattressCarouselSection({ onClaimOffer }) {
   return (
     <section id="range" className="relative w-full min-h-[645px] bg-[#E9ECE8] overflow-hidden select-none scroll-mt-6">
-      <div className="relative w-full max-w-[1278px] min-h-[645px] mx-auto pt-[43px] pb-12">
-        <div className="w-full max-w-[1156px] mx-auto px-6 sm:px-10 lg:px-0 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 lg:gap-[70px]">
+      <div className="relative w-full max-w-[1440px] min-h-[645px] mx-auto pt-[43px] pb-12">
+        <div className="w-full px-6 sm:px-10 lg:px-12 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 lg:gap-[70px]">
           <div className="w-full lg:w-[538.46px] flex flex-col items-start flex-none order-0">
             <h2
               className="w-full lg:w-[447px] lg:h-[68px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[68px] text-[#25364A] select-none whitespace-nowrap"
@@ -31,8 +31,8 @@ export default function MattressCarouselSection({ onClaimOffer }) {
           </div>
         </div>
 
-        <div className="w-full mt-[30px] lg:mt-[55px] pl-6 sm:pl-10 lg:pl-[60px]">
-          <div className="flex flex-row items-center gap-[20px] overflow-x-auto no-scrollbar scroll-smooth pr-6 sm:pr-10 lg:pr-[60px] pb-4">
+        <div className="w-full mt-[30px] lg:mt-[55px] pl-6 sm:pl-10 lg:pl-12">
+          <div className="flex flex-row items-center gap-[20px] overflow-x-auto no-scrollbar scroll-smooth pr-6 sm:pr-10 lg:pr-12 pb-4">
             {MATTRESSES.map((mattress) => (
               <div
                 key={mattress.id}

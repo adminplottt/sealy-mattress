@@ -15,8 +15,8 @@ export default function Footer() {
 
   return (
     <footer className="relative w-full bg-[#F4F5F0] overflow-hidden py-10 lg:py-0 lg:h-[190px]">
-      <div className="relative w-full max-w-[1278px] h-full mx-auto px-6 sm:px-10 lg:px-0 flex flex-col lg:block">
-        <div className="lg:absolute lg:left-[63px] lg:top-[41px] flex-none">
+      <div className="relative w-full max-w-[1440px] h-full mx-auto px-6 sm:px-10 lg:px-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-6">
+        <div className="flex-none">
           <a href="/" className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25364A] rounded">
             <img
               src="/images/footerlogo.png"
@@ -26,8 +26,8 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="mt-8 lg:mt-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:block gap-6">
-          <div className="lg:absolute lg:left-[292px] lg:top-[51px] w-full lg:w-[176px] flex flex-col justify-start">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 lg:gap-12 flex-none">
+          <div className="w-full sm:w-[176px] flex flex-col justify-start">
             <h4 className="font-optima font-normal text-[14px] leading-[16px] text-[#000000] select-none">
               Location
             </h4>
@@ -36,7 +36,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="lg:absolute lg:left-[493px] lg:top-[51px] w-full lg:w-[67px] flex flex-col justify-start">
+          <div className="w-full sm:w-[80px] flex flex-col justify-start">
             <h4 className="font-optima font-normal text-[14px] leading-[16px] text-[#000000] select-none">
               Contact
             </h4>
@@ -48,7 +48,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="lg:absolute lg:left-[585px] lg:top-[51px] w-full lg:w-[118px] flex flex-col justify-start">
+          <div className="w-full sm:w-[140px] flex flex-col justify-start">
             <h4 className="font-optima font-normal text-[14px] leading-[16px] text-[#000000] select-none">
               Email
             </h4>
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 lg:mt-0 lg:absolute lg:left-[793px] lg:top-[41px] w-full max-w-[392px]">
+        <div className="w-full max-w-[393px] flex-none">
           <h3 className="font-optima font-normal text-[22px] sm:text-[24px] leading-[27px] text-[#000000] select-none">
             Get In Touch
           </h3>
@@ -125,8 +125,8 @@ export default function Footer() {
           </form>
 
           {subscribed && (
-            <p className="mt-1.5 text-[11px] font-optima text-green-700 animate-fadeIn">
-              Thank you! Exclusive offer details will be sent to your email.
+            <p className="mt-2 text-xs text-green-700 font-optima select-none">
+              Thank you! We will get in touch with you soon.
             </p>
           )}
         </div>
