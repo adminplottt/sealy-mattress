@@ -1,0 +1,136 @@
+import { useState } from 'react';
+
+export default function Footer() {
+  const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (email.trim()) {
+      setSubscribed(true);
+      setEmail('');
+      setTimeout(() => setSubscribed(false), 4000);
+    }
+  };
+
+  return (
+    <footer className="relative w-full bg-[#F4F5F0] overflow-hidden py-10 lg:py-0 lg:h-[190px]">
+      <div className="relative w-full max-w-[1278px] h-full mx-auto px-6 sm:px-10 lg:px-0 flex flex-col lg:block">
+        <div className="lg:absolute lg:left-[63px] lg:top-[41px] flex-none">
+          <a href="/" className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25364A] rounded">
+            <img
+              src="/images/footerlogo.png"
+              alt="Sealy Posturepedic - Sleep Supported"
+              className="w-[120px] sm:w-[139px] h-[90px] sm:h-[107px] object-contain select-none"
+            />
+          </a>
+        </div>
+
+        <div className="mt-8 lg:mt-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:block gap-6">
+          <div className="lg:absolute lg:left-[292px] lg:top-[51px] w-full lg:w-[176px] flex flex-col justify-start">
+            <h4 className="font-optima font-normal text-[14px] leading-[16px] text-[#000000] select-none">
+              Location
+            </h4>
+            <p className="mt-[10px] font-optima font-normal text-[12px] leading-[14px] text-[#25364A]">
+              Showroom No. 3, Ground Floor, ICC Tech Park, Tower A, Model Colony, Shivajinagar, Pune 4110
+            </p>
+          </div>
+
+          <div className="lg:absolute lg:left-[493px] lg:top-[51px] w-full lg:w-[67px] flex flex-col justify-start">
+            <h4 className="font-optima font-normal text-[14px] leading-[16px] text-[#000000] select-none">
+              Contact
+            </h4>
+            <a
+              href="tel:9623052151"
+              className="mt-[12px] font-optima font-normal text-[12px] leading-[13px] text-[#25364A] hover:underline"
+            >
+              9623052151
+            </a>
+          </div>
+
+          <div className="lg:absolute lg:left-[585px] lg:top-[51px] w-full lg:w-[118px] flex flex-col justify-start">
+            <h4 className="font-optima font-normal text-[14px] leading-[16px] text-[#000000] select-none">
+              Email
+            </h4>
+            <a
+              href="mailto:Sealypune@gmail.com"
+              className="mt-[12px] font-optima font-normal text-[12px] leading-[13px] text-[#000000] hover:underline truncate"
+            >
+              Sealypune@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-8 lg:mt-0 lg:absolute lg:left-[793px] lg:top-[41px] w-full max-w-[392px]">
+          <h3 className="font-optima font-normal text-[22px] sm:text-[24px] leading-[27px] text-[#000000] select-none">
+            Get In Touch
+          </h3>
+
+          <form
+            onSubmit={handleSubmit}
+            className="mt-4 lg:mt-[17px] w-full max-w-[393px] h-[41px] border border-[#000000] rounded-[4px] relative bg-transparent focus-within:ring-1 focus-within:ring-[#25364A]"
+            style={{ width: '393px', height: '41px' }}
+          >
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter Your mail to get exclusive offer"
+              className="outline-none bg-transparent placeholder:text-[#000000] text-[#000000]"
+              style={{
+                position: 'absolute',
+                width: '192px',
+                height: '18px',
+                left: '8px',
+                top: '12px',
+                fontFamily: "'Optima', sans-serif",
+                fontStyle: 'normal',
+                fontWeight: 400,
+                fontSize: '12px',
+                lineHeight: '13px',
+                display: 'flex',
+                alignItems: 'center',
+                color: '#000000',
+              }}
+            />
+
+            <button
+              type="submit"
+              className="rounded-none flex items-center justify-center transition-colors duration-200 cursor-pointer hover:bg-[#2e425a] active:bg-[#1c2938]"
+              style={{
+                position: 'absolute',
+                width: '81px',
+                height: '23px',
+                left: '303px',
+                top: '9px',
+                background: '#25364A',
+                borderRadius: '0px',
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: "'Optima', sans-serif",
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  fontSize: '12px',
+                  lineHeight: '13px',
+                  color: '#FFFFFF',
+                  textAlign: 'center',
+                }}
+              >
+                Submit
+              </span>
+            </button>
+          </form>
+
+          {subscribed && (
+            <p className="mt-1.5 text-[11px] font-optima text-green-700 animate-fadeIn">
+              Thank you! Exclusive offer details will be sent to your email.
+            </p>
+          )}
+        </div>
+      </div>
+    </footer>
+  );
+}

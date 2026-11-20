@@ -1,0 +1,240 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/OPTIMA.woff') format('woff'),
+       local('Optima Regular'), local('Optima'), local('URW Classico'),
+       url('https://fonts.cdnfonts.com/s/14439/OPTIMA.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/OPTIMA.woff') format('woff'),
+       local('Optima Medium'), local('Optima Regular'), local('Optima'),
+       url('https://fonts.cdnfonts.com/s/14439/OPTIMA.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: 550;
+  font-display: swap;
+  src: url('/fonts/OPTIMA.woff') format('woff'),
+       local('Optima Medium'), local('Optima-Medium'), local('Optima Regular'), local('Optima'),
+       url('https://fonts.cdnfonts.com/s/14439/OPTIMA.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/OPTIMA.woff') format('woff'),
+       url('/fonts/OPTIMA_B.woff') format('woff'),
+       local('Optima Medium'), local('Optima Bold'), local('Optima');
+}
+
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/OPTIMA_B.woff') format('woff'),
+       local('Optima Bold'), local('Optima-Bold'),
+       url('https://fonts.cdnfonts.com/s/14439/OPTIMA_B.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/GothamLight.woff') format('woff'),
+       local('Gotham Light'), local('Gotham-Light'), local('GothamLight'), local('Gotham'),
+       url('https://fonts.cdnfonts.com/s/14898/GothamLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 325;
+  font-display: swap;
+  src: url('/fonts/GothamBook.woff') format('woff'),
+       url('/fonts/GothamLight.woff') format('woff'),
+       local('Gotham Book'), local('Gotham-Book'), local('Gotham Light'), local('Gotham'),
+       url('https://fonts.cdnfonts.com/s/14898/GothamBook.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 350;
+  font-display: swap;
+  src: url('/fonts/GothamBook.woff') format('woff'),
+       url('/fonts/GothamMedium.woff') format('woff'),
+       local('Gotham Book'), local('Gotham-Book'), local('Gotham Medium'), local('Gotham'),
+       url('https://fonts.cdnfonts.com/s/14898/GothamBook.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/GothamBook.woff') format('woff'),
+       local('Gotham Book'), local('Gotham-Book'), local('GothamBook'), local('Gotham'),
+       url('https://fonts.cdnfonts.com/s/14898/GothamBook.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Gotham Light'), local('Gotham-Light'), local('GothamLight'),
+       url('/fonts/GothamLight.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/14898/GothamLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  font-style: normal;
+  font-weight: 325;
+  font-display: swap;
+  src: local('Gotham Light'), local('Gotham-Light'), local('GothamLight'),
+       url('/fonts/GothamLight.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/14898/GothamLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  font-style: normal;
+  font-weight: 350;
+  font-display: swap;
+  src: local('Gotham Light'), local('Gotham-Light'), local('GothamLight'),
+       url('/fonts/GothamLight.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/14898/GothamLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Gotham Medium'), local('Gotham-Medium'), local('GothamMedium'), local('Gotham'),
+       url('/fonts/GothamMedium.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Gotham Medium'), local('Gotham-Medium'), local('GothamMedium'),
+       url('/fonts/GothamMedium.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Orpheus Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Orpheus Pro'), local('OrpheusPro'), local('Cormorant Garamond');
+}
+
+@font-face {
+  font-family: 'Orpheus Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Orpheus Pro Medium'), local('Orpheus Pro'), local('Cormorant Garamond Medium'), local('Cormorant Garamond');
+}
+
+@theme {
+  --font-gotham: 'Gotham', 'Gotham Medium', 'Gotham-Medium', 'Gotham Light', 'Gotham-Light', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-optima: 'Optima', 'URW Classico', Candara, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-orpheus: 'Orpheus Pro', 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-dmsans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-inter: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+
+  --color-brand-navy: #25364A;
+  --color-brand-navy-dark: #17212C;
+  --color-brand-blue: #527C99;
+  --color-brand-cream: #F4F5F0;
+  --color-brand-sage: #E9ECE8;
+  --color-brand-sky: #D7F0FF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
+}
+
+@layer utilities {
+  .font-gotham {
+    font-family: var(--font-gotham);
+  }
+  .font-optima {
+    font-family: var(--font-optima);
+  }
+  .font-orpheus {
+    font-family: var(--font-orpheus);
+  }
+  .font-dmsans {
+    font-family: var(--font-dmsans);
+  }
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-awards {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
