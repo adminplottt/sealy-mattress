@@ -36,24 +36,19 @@ export default function TheSealyDifference() {
         </div>
       </div>
 
-      <div className="relative w-full max-w-[1440px] min-h-[311px] mx-auto px-6 sm:px-10 lg:px-12 py-10 lg:py-[55px] flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 lg:gap-12">
+      <div className="relative w-full max-w-[1440px] min-h-[260px] lg:min-h-[311px] mx-auto px-4 sm:px-10 lg:px-12 py-8 sm:py-10 lg:py-[55px] flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 sm:gap-8 lg:gap-12">
         <div className="w-full lg:w-[543.79px] flex flex-col justify-center items-start flex-none">
           <p className="font-dmsans font-semibold text-[10px] leading-[15px] tracking-[2.2px] uppercase text-[#527C99] flex-none order-0 whitespace-nowrap">
             The Sealy difference
           </p>
 
-          <div className="pt-[16px] lg:pt-[24px] flex-none order-1">
+          <div className="pt-[14px] lg:pt-[24px] flex-none order-1 w-full">
             <h2
-              className="w-full lg:w-[508px] lg:h-[90px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight sm:leading-[40px] lg:leading-[45px] text-[#25364A] select-none"
+              className="w-full lg:w-[508px] h-auto lg:h-[90px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight sm:leading-[40px] lg:leading-[45px] text-[#25364A] select-none"
               style={{
-                width: '508px',
-                maxWidth: '100%',
-                height: '90px',
                 fontFamily: "'Gotham', sans-serif",
                 fontStyle: 'normal',
                 fontWeight: 325,
-                fontSize: '34px',
-                lineHeight: '45px',
                 color: '#25364A',
               }}
             >

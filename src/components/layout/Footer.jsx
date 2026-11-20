@@ -15,7 +15,7 @@ export default function Footer() {
 
   return (
     <footer className="relative w-full bg-[#F4F5F0] overflow-hidden py-10 lg:py-0 lg:h-[190px]">
-      <div className="relative w-full max-w-[1440px] h-full mx-auto px-6 sm:px-10 lg:px-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-6">
+      <div className="relative w-full max-w-[1440px] h-full mx-auto px-4 sm:px-10 lg:px-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-6">
         <div className="flex-none">
           <a href="/" className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25364A] rounded">
             <img
@@ -69,7 +69,6 @@ export default function Footer() {
           <form
             onSubmit={handleSubmit}
             className="mt-4 lg:mt-[17px] w-full max-w-[393px] h-[41px] border border-[#000000] rounded-[4px] relative bg-transparent focus-within:ring-1 focus-within:ring-[#25364A]"
-            style={{ width: '393px', height: '41px' }}
           >
             <input
               type="email"
@@ -77,33 +76,20 @@ export default function Footer() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter Your mail to get exclusive offer"
-              className="outline-none bg-transparent placeholder:text-[#000000] text-[#000000]"
+              className="absolute left-[8px] top-[12px] right-[92px] outline-none bg-transparent placeholder:text-[#000000] text-[#000000] text-[12px] leading-[13px] font-optima"
               style={{
-                position: 'absolute',
-                width: '192px',
-                height: '18px',
-                left: '8px',
-                top: '12px',
                 fontFamily: "'Optima', sans-serif",
-                fontStyle: 'normal',
                 fontWeight: 400,
                 fontSize: '12px',
                 lineHeight: '13px',
-                display: 'flex',
-                alignItems: 'center',
                 color: '#000000',
               }}
             />
 
             <button
               type="submit"
-              className="rounded-none flex items-center justify-center transition-colors duration-200 cursor-pointer hover:bg-[#2e425a] active:bg-[#1c2938]"
+              className="absolute right-[9px] top-[9px] w-[81px] h-[23px] rounded-none flex items-center justify-center transition-colors duration-200 cursor-pointer hover:bg-[#2e425a] active:bg-[#1c2938]"
               style={{
-                position: 'absolute',
-                width: '81px',
-                height: '23px',
-                left: '303px',
-                top: '9px',
                 background: '#25364A',
                 borderRadius: '0px',
               }}

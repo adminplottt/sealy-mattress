@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#111111] flex flex-col relative">
+    <div className="min-h-screen bg-[#111111] flex flex-col relative overflow-x-hidden">
       <HeroSection onClaimOffer={handleOpenClaimOffer} />
       <TheSealyDifference />
       <MattressCarouselSection onClaimOffer={handleOpenClaimOffer} />

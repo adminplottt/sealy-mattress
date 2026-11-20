@@ -36,20 +36,15 @@ const TESTIMONIALS = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative w-full min-h-[459px] bg-[#D7F0FF] overflow-hidden py-12 lg:py-0">
-      <div className="relative w-full max-w-[1440px] min-h-[459px] mx-auto px-6 sm:px-10 lg:px-12 flex flex-col justify-center">
+    <section className="relative w-full min-h-[440px] lg:min-h-[459px] bg-[#D7F0FF] overflow-hidden py-10 lg:py-0">
+      <div className="relative w-full max-w-[1440px] min-h-[440px] lg:min-h-[459px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col justify-center">
         <div className="w-full text-center pt-0 lg:pt-[40px] flex flex-col items-center flex-none">
           <h2
-            className="w-full lg:w-[1127px] lg:h-[82px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] text-center select-none"
+            className="w-full lg:w-[1127px] h-auto lg:h-[82px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] text-center select-none"
             style={{
-              width: '1127px',
-              maxWidth: '100%',
-              height: '82px',
               fontFamily: "'Gotham', sans-serif",
               fontStyle: 'normal',
               fontWeight: 325,
-              fontSize: '34px',
-              lineHeight: '41px',
               textAlign: 'center',
               color: '#25364A',
             }}
@@ -60,31 +55,29 @@ export default function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="w-full mt-8 lg:mt-[36px] pb-0 lg:pb-[45px]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="w-full mt-6 sm:mt-8 lg:mt-[36px] pb-0 lg:pb-[45px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
             {TESTIMONIALS.map((review) => (
               <div
                 key={review.id}
-                className="relative w-full h-[238px] bg-[#FFFFFF] rounded-[4px] shadow-sm flex flex-col items-center justify-start pt-[43px] px-6 text-center select-none"
+                className="relative w-full min-h-[238px] h-auto sm:h-[238px] bg-[#FFFFFF] rounded-[4px] shadow-sm flex flex-col items-center justify-start pt-[36px] sm:pt-[43px] pb-[60px] sm:pb-0 px-4 sm:px-6 text-center select-none"
               >
                 <FiveStars />
 
-                <h3 className="mt-[18px] font-optima font-normal text-[22px] sm:text-[24px] leading-[27px] text-[#000000] whitespace-nowrap">
+                <h3 className="mt-[16px] sm:mt-[18px] font-optima font-normal text-[20px] sm:text-[24px] leading-[25px] sm:leading-[27px] text-[#000000] whitespace-nowrap">
                   {review.title}
                 </h3>
 
-                <p className="mt-[14px] font-optima font-normal text-[12px] leading-[15px] text-[#000000] max-w-[280px]">
+                <p className="mt-[12px] sm:mt-[14px] font-optima font-normal text-[12px] leading-[16px] text-[#000000] max-w-[280px]">
                   {review.quote}
                 </p>
 
                 <p
-                  className="font-optima text-[16px] leading-[15px] text-center text-[#000000] whitespace-nowrap select-none absolute left-0 right-0 bottom-[43px]"
+                  className="font-optima text-[15px] sm:text-[16px] leading-[15px] text-center text-[#000000] whitespace-nowrap select-none absolute left-0 right-0 bottom-[24px] sm:bottom-[43px]"
                   style={{
                     fontFamily: "'Optima', sans-serif",
                     fontStyle: 'normal',
                     fontWeight: 550,
-                    fontSize: '16px',
-                    lineHeight: '15px',
                     textAlign: 'center',
                     color: '#000000',
                   }}

@@ -13,19 +13,14 @@ export default function AwardWinningSection() {
   ];
 
   return (
-    <section className="relative w-full h-[332px] bg-[#F4F5F0] overflow-hidden select-none flex flex-col justify-between items-center pt-[25px] pb-0">
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 flex justify-center flex-none">
+    <section className="relative w-full h-[310px] sm:h-[332px] bg-[#F4F5F0] overflow-hidden select-none flex flex-col justify-between items-center pt-[20px] sm:pt-[25px] pb-0">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-12 flex justify-center flex-none">
         <h2
-          className="w-auto lg:w-[239px] h-[41px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-[41px] text-[#25364A] text-center select-none whitespace-nowrap"
+          className="w-auto lg:w-[239px] h-auto lg:h-[41px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] text-center select-none whitespace-nowrap"
           style={{
-            width: '239px',
-            maxWidth: '100%',
-            height: '41px',
             fontFamily: "'Gotham', sans-serif",
             fontStyle: 'normal',
             fontWeight: 325,
-            fontSize: '34px',
-            lineHeight: '41px',
             color: '#25364A',
           }}
         >
