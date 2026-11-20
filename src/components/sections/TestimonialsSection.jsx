@@ -36,7 +36,7 @@ const TESTIMONIALS = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative w-full min-h-[440px] lg:min-h-[459px] bg-[#D7F0FF] overflow-hidden py-10 lg:py-0">
+    <section className="relative w-full min-h-[440px] lg:min-h-[459px] bg-[#D7F0FF] overflow-hidden py-10 lg:py-0 -mt-[1px]">
       <div className="relative w-full max-w-[1440px] min-h-[440px] lg:min-h-[459px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col justify-center">
         <div className="w-full text-center pt-0 lg:pt-[40px] flex flex-col items-center flex-none">
           <h2

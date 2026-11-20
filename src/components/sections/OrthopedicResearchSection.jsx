@@ -25,7 +25,7 @@ const BULLETS = [
 
 export default function OrthopedicResearchSection({ onClaimOffer }) {
   return (
-    <section className="relative w-full min-h-0 lg:min-h-[510px] bg-[#F4F5F0] overflow-hidden pt-3 pb-8 sm:py-8 lg:py-0">
+    <section className="relative w-full min-h-0 lg:min-h-[510px] bg-[#F4F5F0] overflow-hidden pt-3 pb-8 sm:py-8 lg:py-0 -mt-[1px]">
       <div className="relative w-full max-w-[1440px] min-h-0 lg:min-h-[510px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col-reverse lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-12 pt-0 pb-2 sm:py-6 lg:py-[29px]">
         <div className="w-full lg:max-w-[466px] flex flex-col justify-start">
           <h2

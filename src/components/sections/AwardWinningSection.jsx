@@ -13,7 +13,7 @@ export default function AwardWinningSection() {
   ];
 
   return (
-    <section className="relative w-full h-[310px] sm:h-[332px] bg-[#F4F5F0] overflow-hidden select-none flex flex-col justify-between items-center pt-[20px] sm:pt-[25px] pb-0">
+    <section className="relative w-full h-[310px] sm:h-[332px] bg-[#F4F5F0] overflow-hidden select-none flex flex-col justify-between items-center pt-[20px] sm:pt-[25px] pb-0 -mt-[1px]">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-12 flex justify-center flex-none">
         <h2
           className="w-auto lg:w-[239px] h-auto lg:h-[41px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] text-center select-none whitespace-nowrap"

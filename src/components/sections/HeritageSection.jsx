@@ -1,6 +1,6 @@
 export default function HeritageSection({ onClaimOffer }) {
   return (
-    <section className="relative w-full min-h-[650px] lg:min-h-[720px] bg-[#D7F0FF] overflow-hidden">
+    <section className="relative w-full min-h-[650px] lg:min-h-[720px] bg-[#D7F0FF] overflow-hidden -mt-[1px]">
       <div className="relative w-full max-w-[1440px] min-h-[650px] lg:min-h-[720px] mx-auto py-10 lg:py-0 px-4 sm:px-10 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         <div className="w-full lg:max-w-[550px] flex flex-col justify-center py-4 lg:py-12">
           <div>

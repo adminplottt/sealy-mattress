@@ -183,6 +183,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-synthesis: none;
+  background-color: #F4F5F0;
 }
 
 @layer utilities {
