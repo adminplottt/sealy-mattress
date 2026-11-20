@@ -16,7 +16,7 @@ export default function HeroSection({ onClaimOffer }) {
       <Navbar onClaimOffer={onClaimOffer} />
 
       <div className="relative w-full max-w-[1440px] h-full mx-auto px-4 sm:px-10 lg:px-12">
-        <div className="absolute left-1/2 -translate-x-1/2 top-[180px] sm:top-[169px] w-full max-w-[722px] h-auto sm:h-[325px] px-4 sm:px-0 flex flex-col items-center gap-[6px] z-10">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[215px] sm:top-[169px] w-full max-w-[722px] h-auto sm:h-[325px] px-4 sm:px-0 flex flex-col items-center gap-[6px] z-10">
           <div className="w-full max-w-[722px] flex flex-col items-center pt-2 sm:pt-4 flex-none order-0 self-stretch">
             <h1 className="w-full lg:w-[722px] lg:h-[161px] font-gotham font-medium text-3xl sm:text-6xl lg:text-[74px] leading-tight lg:leading-[80px] text-center tracking-[-1px] sm:tracking-[-2px] lg:tracking-[-4.14072px] text-white select-none flex items-center justify-center">
               It&apos;s Time to Upgrade
