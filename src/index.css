@@ -1,146 +1,5 @@
 @import "tailwindcss";
-
-@font-face {
-  font-family: 'Optima';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/OPTIMA.woff') format('woff'),
-       local('Optima Regular'), local('Optima'), local('URW Classico'),
-       url('https://fonts.cdnfonts.com/s/14439/OPTIMA.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Optima';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('/fonts/OPTIMA.woff') format('woff'),
-       local('Optima Medium'), local('Optima Regular'), local('Optima'),
-       url('https://fonts.cdnfonts.com/s/14439/OPTIMA.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Optima';
-  font-style: normal;
-  font-weight: 550;
-  font-display: swap;
-  src: url('/fonts/OPTIMA.woff') format('woff'),
-       local('Optima Medium'), local('Optima-Medium'), local('Optima Regular'), local('Optima'),
-       url('https://fonts.cdnfonts.com/s/14439/OPTIMA.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Optima';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/fonts/OPTIMA.woff') format('woff'),
-       url('/fonts/OPTIMA_B.woff') format('woff'),
-       local('Optima Medium'), local('Optima Bold'), local('Optima');
-}
-
-@font-face {
-  font-family: 'Optima';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/OPTIMA_B.woff') format('woff'),
-       local('Optima Bold'), local('Optima-Bold'),
-       url('https://fonts.cdnfonts.com/s/14439/OPTIMA_B.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Gotham';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('/fonts/GothamLight.woff') format('woff'),
-       local('Gotham Light'), local('Gotham-Light'), local('GothamLight'), local('Gotham'),
-       url('https://fonts.cdnfonts.com/s/14898/GothamLight.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Gotham';
-  font-style: normal;
-  font-weight: 325;
-  font-display: swap;
-  src: url('/fonts/GothamBook.woff') format('woff'),
-       url('/fonts/GothamLight.woff') format('woff'),
-       local('Gotham Book'), local('Gotham-Book'), local('Gotham Light'), local('Gotham'),
-       url('https://fonts.cdnfonts.com/s/14898/GothamBook.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Gotham';
-  font-style: normal;
-  font-weight: 350;
-  font-display: swap;
-  src: url('/fonts/GothamBook.woff') format('woff'),
-       url('/fonts/GothamMedium.woff') format('woff'),
-       local('Gotham Book'), local('Gotham-Book'), local('Gotham Medium'), local('Gotham'),
-       url('https://fonts.cdnfonts.com/s/14898/GothamBook.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Gotham';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/GothamBook.woff') format('woff'),
-       local('Gotham Book'), local('Gotham-Book'), local('GothamBook'), local('Gotham'),
-       url('https://fonts.cdnfonts.com/s/14898/GothamBook.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Gotham Light';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Gotham Light'), local('Gotham-Light'), local('GothamLight'),
-       url('/fonts/GothamLight.woff') format('woff'),
-       url('https://fonts.cdnfonts.com/s/14898/GothamLight.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Gotham Light';
-  font-style: normal;
-  font-weight: 325;
-  font-display: swap;
-  src: local('Gotham Light'), local('Gotham-Light'), local('GothamLight'),
-       url('/fonts/GothamLight.woff') format('woff'),
-       url('https://fonts.cdnfonts.com/s/14898/GothamLight.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Gotham Light';
-  font-style: normal;
-  font-weight: 350;
-  font-display: swap;
-  src: local('Gotham Light'), local('Gotham-Light'), local('GothamLight'),
-       url('/fonts/GothamLight.woff') format('woff'),
-       url('https://fonts.cdnfonts.com/s/14898/GothamLight.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Gotham';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Gotham Medium'), local('Gotham-Medium'), local('GothamMedium'), local('Gotham'),
-       url('/fonts/GothamMedium.woff') format('woff'),
-       url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Gotham Medium';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Gotham Medium'), local('Gotham-Medium'), local('GothamMedium'),
-       url('/fonts/GothamMedium.woff') format('woff'),
-       url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
-}
+@import "./fonts.css";
 
 @font-face {
   font-family: 'Orpheus Pro';
@@ -238,4 +97,230 @@ html, body {
   display: flex;
   width: max-content;
   animation: marquee 20s linear infinite;
+}
+
+/* ==========================================================================
+   Figma Exact Specifications
+   ========================================================================== */
+
+/* Made for deeper rest. Designed for better mornings */
+.figma-deeper-rest {
+  width: 596px;
+  height: 90px;
+  font-family: 'Gotham', sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 40px;
+  line-height: 45px;
+  color: #25364A;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (max-width: 640px) {
+  .figma-deeper-rest {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 26px !important;
+    line-height: 32px !important;
+  }
+}
+
+/* Better sleep Happier mornings */
+.figma-better-sleep {
+  width: 1127px;
+  height: 96px;
+
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #25364A;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+@media (max-width: 1150px) {
+  .figma-better-sleep {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .figma-better-sleep {
+    font-size: 26px !important;
+    line-height: 32px !important;
+  }
+}
+
+/* Heading 2: Find your perfect comfort. (Container) */
+.figma-heading-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 538px;
+  height: 110px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (max-width: 640px) {
+  .figma-heading-2 {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.figma-heading-2-text {
+  width: 538px;
+  font-family: 'Gotham', sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 40px;
+  line-height: 45px;
+  color: #25364A;
+}
+
+@media (max-width: 640px) {
+  .figma-heading-2-text {
+    width: 100% !important;
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+}
+
+/* Frame 2: Find your perfect comfort. section box */
+.figma-card-frame-2 {
+  position: relative;
+  width: 468px;
+  height: 349px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  flex: none;
+  overflow: hidden;
+}
+
+/* Frame 5: Card image */
+.figma-card-frame-5 {
+  position: absolute;
+  width: 468px;
+  height: 277px;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  background: #F0F2EF;
+}
+
+.figma-card-frame-5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.figma-card-frame-5 img:hover {
+  transform: scale(1.05);
+}
+
+/* Sealy Posturepedic Palatial Crest text */
+.figma-card-title {
+  position: absolute;
+  width: 238px;
+  height: 28px;
+  left: 15px;
+  top: 297px;
+  font-family: 'Optima', sans-serif;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Frame 36: Get Your Offer button */
+.figma-btn-frame-36 {
+  position: absolute;
+  width: 119px;
+  height: 34px;
+  left: 334px;
+  top: 291px;
+  background: #25364A;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.figma-btn-frame-36:hover {
+  background: #2d425b;
+}
+
+.figma-btn-frame-36:active {
+  background: #1c2938;
+}
+
+/* Get Your Offer text */
+.figma-btn-text {
+  position: absolute;
+  width: 99px;
+  height: 14px;
+  left: 10px;
+  top: 10px;
+  font-family: 'Optima', sans-serif;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Responsive fallback for mobile devices */
+@media (max-width: 640px) {
+  .figma-card-frame-2 {
+    width: 82vw;
+    max-width: 340px;
+    height: 310px;
+  }
+  .figma-card-frame-5 {
+    width: 100%;
+    height: 230px;
+  }
+  .figma-card-title {
+    top: 250px;
+    left: 12px;
+    width: 180px;
+    font-size: 14px;
+  }
+  .figma-btn-frame-36 {
+    top: 247px;
+    left: auto;
+    right: 12px;
+    width: 105px;
+    height: 32px;
+  }
+  .figma-btn-text {
+    left: 6px;
+    top: 9px;
+    width: 93px;
+    font-size: 12px;
+  }
 }

@@ -2,16 +2,32 @@ import { MATTRESSES } from '../../data/mattresses';
 
 export default function MattressCarouselSection({ onClaimOffer }) {
   return (
-    <section id="range" className="relative w-full min-h-[600px] lg:min-h-[645px] bg-[#E9ECE8] overflow-hidden select-none scroll-mt-6">
-      <div className="relative w-full max-w-[1440px] min-h-[600px] lg:min-h-[645px] mx-auto pt-[36px] lg:pt-[43px] pb-10 lg:pb-12">
-        <div className="w-full px-4 sm:px-10 lg:px-12 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-4 sm:gap-6 lg:gap-[70px]">
-          <div className="w-full lg:w-[538.46px] flex flex-col items-start flex-none order-0">
+    <section id="range" className="relative w-full min-h-[560px] lg:min-h-[610px] bg-[#E9ECE8] overflow-hidden select-none scroll-mt-6">
+      <div className="relative w-full max-w-[1440px] min-h-[560px] lg:min-h-[610px] mx-auto pt-[36px] lg:pt-[43px] pb-5 lg:pb-6">
+        <div className="w-full px-4 sm:px-10 lg:px-12 flex flex-col lg:flex-row justify-between items-start gap-4 sm:gap-6 lg:gap-[70px]">
+          <div
+            className="figma-heading-2"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
+              padding: '0px',
+              width: '538px',
+              height: '110px',
+              flex: 'none',
+              order: 0,
+              flexGrow: 0,
+            }}
+          >
             <h2
-              className="w-full lg:w-[447px] h-auto lg:h-[68px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[68px] text-[#25364A] select-none lg:whitespace-nowrap"
+              className="figma-heading-2-text select-none"
               style={{
+                width: '538px',
                 fontFamily: "'Gotham', sans-serif",
                 fontStyle: 'normal',
-                fontWeight: 325,
+                fontWeight: 350,
+                fontSize: '40px',
+                lineHeight: '45px',
                 color: '#25364A',
               }}
             >
@@ -19,44 +35,56 @@ export default function MattressCarouselSection({ onClaimOffer }) {
             </h2>
           </div>
 
-          <div className="w-full lg:w-[400px] lg:max-w-[400px] lg:h-[56px] flex flex-col items-start flex-none order-1">
-            <p className="w-full lg:w-[400px] lg:h-[56px] font-optima font-normal text-[14px] sm:text-[16px] leading-[24px] lg:leading-[28px] text-[#17212C]">
+          <div
+            className="w-full lg:w-[400px] flex-none order-1"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
+              padding: '0px',
+              width: '400px',
+              maxWidth: '400px',
+              height: '56px',
+              flex: 'none',
+              order: 1,
+              flexGrow: 0,
+            }}
+          >
+            <p className="w-full font-optima font-normal text-[14px] sm:text-[16px] leading-[24px] lg:leading-[28px] text-[#17212C]">
               Explore Sealy mattress families designed around different comfort and support preferences.
             </p>
           </div>
         </div>
 
-        <div className="w-full mt-[24px] sm:mt-[30px] lg:mt-[55px] pl-4 sm:pl-10 lg:pl-12">
-          <div className="flex flex-row items-center gap-[16px] sm:gap-[20px] overflow-x-auto no-scrollbar scroll-smooth pr-4 sm:pr-10 lg:pr-12 pb-4">
+        <div className="w-full mt-[24px] sm:mt-[30px] lg:mt-[55px] pl-4 sm:pl-10 lg:px-12">
+          <div className="flex flex-row items-center gap-[16px] sm:gap-[20px] overflow-x-auto no-scrollbar scroll-smooth pr-4 sm:pr-10 lg:pr-12 pb-2">
             {MATTRESSES.map((mattress) => (
               <div
                 key={mattress.id}
-                className="w-[82vw] max-w-[340px] sm:w-[380px] lg:w-[468px] h-[290px] sm:h-[316px] bg-[#FFFFFF] rounded-[4px] flex-none shadow-sm flex flex-col justify-between overflow-hidden"
+                className="figma-card-frame-2"
               >
-                <div className="w-full h-[225px] sm:h-[249px] overflow-hidden rounded-t-[4px] bg-[#F0F2EF]">
+                <div className="figma-card-frame-5">
                   <img
                     src={mattress.image}
                     alt={mattress.name}
-                    className="w-full h-full object-cover select-none transition-transform duration-300 hover:scale-105"
                     loading="lazy"
                   />
                 </div>
 
-                <div className="w-full h-[65px] sm:h-[67px] px-[14px] sm:px-[16px] flex flex-row items-center justify-between">
-                  <h3 className="font-optima font-[550] text-[14px] sm:text-[16px] leading-[28px] text-[#000000] truncate max-w-[170px] sm:max-w-[240px] lg:max-w-[320px]">
-                    {mattress.name}
-                  </h3>
+                <h3 className="figma-card-title select-none">
+                  {mattress.name}
+                </h3>
 
-                  <button
-                    type="button"
-                    onClick={onClaimOffer}
-                    className="w-[95px] sm:w-[97px] h-[27px] bg-[#25364A] hover:bg-[#2d425b] active:bg-[#1c2938] rounded-[4px] flex items-center justify-center transition-colors duration-200 cursor-pointer flex-none focus:outline-none focus-visible:ring-1 focus-visible:ring-[#25364A]"
-                  >
-                    <span className="font-optima font-normal text-[10px] leading-[28px] text-white select-none whitespace-nowrap">
-                      Get Your Offer
-                    </span>
-                  </button>
-                </div>
+                <button
+                  type="button"
+                  onClick={onClaimOffer}
+                  className="figma-btn-frame-36"
+                  aria-label={`Get offer for ${mattress.name}`}
+                >
+                  <span className="figma-btn-text">
+                    Get Your Offer
+                  </span>
+                </button>
               </div>
             ))}
           </div>

@@ -38,20 +38,37 @@ export default function TestimonialsSection() {
   return (
     <section className="relative w-full min-h-[440px] lg:min-h-[459px] bg-[#D7F0FF] overflow-hidden py-10 lg:py-0 -mt-[1px]">
       <div className="relative w-full max-w-[1440px] min-h-[440px] lg:min-h-[459px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col justify-center">
-        <div className="w-full text-center pt-0 lg:pt-[40px] flex flex-col items-center flex-none">
+        <div
+          className="mx-auto flex flex-col items-center pt-0 lg:pt-[40px] flex-none h-auto lg:h-[96px]"
+          style={{
+            width: '1127px',
+            maxWidth: '100%',
+            flex: 'none',
+            order: 0,
+            flexGrow: 0,
+          }}
+        >
           <h2
-            className="w-full lg:w-[1127px] h-auto lg:h-[82px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] text-center select-none"
+            className="figma-better-sleep select-none"
             style={{
-              fontFamily: "'Gotham', sans-serif",
+              width: '1127px',
+              height: '96px',
+              fontFamily: "'Gotham'",
               fontStyle: 'normal',
-              fontWeight: 325,
+              fontWeight: 350,
+              fontSize: '40px',
+              lineHeight: '48px',
               textAlign: 'center',
               color: '#25364A',
+              flex: 'none',
+              order: 0,
+              alignSelf: 'stretch',
+              flexGrow: 0,
             }}
           >
-            Better sleep.
+            Better sleep
             <br />
-            Happier mornings.
+            Happier mornings
           </h2>
         </div>
 

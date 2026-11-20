@@ -37,24 +37,31 @@ export default function TheSealyDifference() {
       </div>
 
       <div className="relative w-full max-w-[1440px] min-h-[260px] lg:min-h-[311px] mx-auto px-4 sm:px-10 lg:px-12 py-8 sm:py-10 lg:py-[55px] flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 sm:gap-8 lg:gap-12">
-        <div className="w-full lg:w-[543.79px] flex flex-col justify-center items-start flex-none">
+        <div className="w-full lg:w-[596px] flex flex-col justify-center items-start flex-none">
           <p className="font-dmsans font-semibold text-[10px] leading-[15px] tracking-[2.2px] uppercase text-[#527C99] flex-none order-0 whitespace-nowrap">
             The Sealy difference
           </p>
 
           <div className="pt-[14px] lg:pt-[24px] flex-none order-1 w-full">
             <h2
-              className="w-full lg:w-[508px] h-auto lg:h-[90px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight sm:leading-[40px] lg:leading-[45px] text-[#25364A] select-none"
+              className="figma-deeper-rest select-none"
               style={{
+                width: '596px',
+                height: '90px',
                 fontFamily: "'Gotham', sans-serif",
                 fontStyle: 'normal',
-                fontWeight: 325,
+                fontWeight: 350,
+                fontSize: '40px',
+                lineHeight: '45px',
                 color: '#25364A',
+                flex: 'none',
+                order: 0,
+                flexGrow: 0,
               }}
             >
               Made for deeper rest.
               <br />
-              Designed for better mornings.
+              Designed for better mornings
             </h2>
           </div>
         </div>

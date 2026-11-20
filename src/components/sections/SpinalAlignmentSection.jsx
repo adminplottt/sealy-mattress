@@ -25,8 +25,8 @@ const BULLETS = [
 
 export default function SpinalAlignmentSection({ onClaimOffer }) {
   return (
-    <section className="relative w-full min-h-0 lg:min-h-[510px] bg-[#F4F5F0] overflow-hidden pt-8 pb-3 sm:py-8 lg:py-0 -mt-[1px]">
-      <div className="relative w-full max-w-[1440px] min-h-0 lg:min-h-[510px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-12 pt-2 pb-0 sm:py-6 lg:py-[29px]">
+    <section className="relative w-full min-h-0 lg:min-h-[550px] bg-[#F4F5F0] overflow-hidden pt-12 pb-3 sm:pt-14 sm:pb-6 lg:py-0 -mt-[1px]">
+      <div className="relative w-full max-w-[1440px] min-h-0 lg:min-h-[550px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-12 pt-2 pb-0 sm:pt-4 sm:pb-0 lg:pt-[65px] lg:pb-[29px]">
         <div className="w-full lg:w-[620px] xl:w-[650px] h-[240px] sm:h-[360px] lg:h-[452px] overflow-hidden rounded-none shadow-sm bg-white/40 flex-none">
           <img
             src="/images/Spinal alignment.png"
@@ -38,11 +38,16 @@ export default function SpinalAlignmentSection({ onClaimOffer }) {
 
         <div className="w-full lg:max-w-[450px] flex flex-col justify-start">
           <h2
-            className="w-full lg:w-[359px] h-auto lg:h-[82px] font-gotham text-2xl sm:text-3xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] select-none flex-none"
+            className="w-full lg:w-[419px] h-auto lg:h-[96px] font-gotham text-2xl sm:text-3xl lg:text-[40px] leading-tight lg:leading-[48px] text-[#25364A] select-none flex-none"
             style={{
+              width: '419px',
+              maxWidth: '100%',
+              height: '96px',
               fontFamily: "'Gotham', sans-serif",
               fontStyle: 'normal',
-              fontWeight: 325,
+              fontWeight: 350,
+              fontSize: '40px',
+              lineHeight: '48px',
               color: '#25364A',
             }}
           >
