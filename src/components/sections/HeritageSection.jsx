@@ -9,19 +9,37 @@ export default function HeritageSection({ onClaimOffer }) {
             </p>
           </div>
 
-          <div className="mt-3 sm:mt-4 w-full lg:w-[264px] h-auto lg:h-[82px] flex-none">
+          <div
+            className="mt-3 sm:mt-4 w-full lg:w-[316px] h-auto lg:h-[96px] flex-none"
+            style={{
+              width: '316px',
+              maxWidth: '100%',
+              height: '96px',
+              flex: 'none',
+              order: 0,
+              flexGrow: 0,
+            }}
+          >
             <h2
-              className="w-full lg:w-[264px] h-auto lg:h-[82px] font-gotham text-2xl sm:text-4xl lg:text-[34px] leading-tight lg:leading-[41px] text-[#25364A] select-none"
+              className="figma-legacy-built w-full font-gotham text-2xl sm:text-3xl lg:text-[40px] leading-tight lg:leading-[48px] text-[#25364A] select-none"
               style={{
-                fontFamily: "'Gotham', sans-serif",
+                width: '316px',
+                maxWidth: '100%',
+                height: '96px',
+                fontFamily: "'Gotham', 'Gotham Book', sans-serif",
                 fontStyle: 'normal',
-                fontWeight: 325,
+                fontWeight: 350,
+                fontSize: '40px',
+                lineHeight: '48px',
                 color: '#25364A',
+                flex: 'none',
+                order: 0,
+                flexGrow: 0,
               }}
             >
               A legacy built
               <br />
-              <span className="whitespace-nowrap">on better sleep.</span>
+              on better sleep.
             </h2>
           </div>
 
@@ -77,7 +95,7 @@ export default function HeritageSection({ onClaimOffer }) {
         </div>
 
         <div className="w-full lg:w-[594px] flex items-center justify-center lg:justify-end">
-          <div className="relative w-full max-w-[594px] h-[300px] sm:h-[450px] lg:h-[630px] overflow-hidden rounded-none shadow-sm">
+          <div className="relative w-full max-w-[594px] h-[300px] sm:h-[450px] lg:h-[630px] overflow-hidden rounded-none shadow-none">
             <img
               src="/images/Heritage&Innovation.png"
               alt="A legacy built on better sleep"

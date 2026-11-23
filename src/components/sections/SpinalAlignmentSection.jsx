@@ -27,7 +27,7 @@ export default function SpinalAlignmentSection({ onClaimOffer }) {
   return (
     <section className="relative w-full min-h-0 lg:min-h-[550px] bg-[#F4F5F0] overflow-hidden pt-12 pb-3 sm:pt-14 sm:pb-6 lg:py-0 -mt-[1px]">
       <div className="relative w-full max-w-[1440px] min-h-0 lg:min-h-[550px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-12 pt-2 pb-0 sm:pt-4 sm:pb-0 lg:pt-[65px] lg:pb-[29px]">
-        <div className="w-full lg:w-[620px] xl:w-[650px] h-[240px] sm:h-[360px] lg:h-[452px] overflow-hidden rounded-none shadow-sm bg-white/40 flex-none">
+        <div className="w-full lg:w-[620px] xl:w-[650px] h-[240px] sm:h-[360px] lg:h-[452px] overflow-hidden rounded-none shadow-none bg-white/40 flex-none">
           <img
             src="/images/Spinal alignment.png"
             alt="Spinal alignment for your best sleep"

@@ -13,27 +13,43 @@ export default function AwardWinningSection() {
   ];
 
   return (
-    <section className="relative w-full h-[340px] sm:h-[370px] bg-[#F4F5F0] overflow-hidden select-none flex flex-col justify-between items-center pt-[26px] sm:pt-[34px] pb-[10px] sm:pb-[14px] -mt-[1px]">
+    <section className="relative w-full h-[340px] sm:h-[370px] bg-[#F4F5F0] overflow-hidden select-none flex flex-col justify-between items-center pt-[30px] pb-[10px] sm:pb-[14px] -mt-[1px]">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-12 flex justify-center flex-none">
-        <h2
-          className="font-gotham text-2xl sm:text-3xl lg:text-[40px] leading-tight lg:leading-[48px] text-[#25364A] text-center select-none whitespace-nowrap"
+        <div
+          className="figma-award-winning-container"
           style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            padding: '0px',
             width: '285px',
             maxWidth: '100%',
             height: '48px',
-            fontFamily: "'Gotham', sans-serif",
-            fontStyle: 'normal',
-            fontWeight: 350,
-            fontSize: '40px',
-            lineHeight: '48px',
-            color: '#25364A',
             flex: 'none',
             order: 0,
             flexGrow: 0,
           }}
         >
-          Award Wining
-        </h2>
+          <h2
+            className="figma-award-winning-text font-gotham text-2xl sm:text-3xl lg:text-[40px] leading-tight lg:leading-[48px] text-[#25364A] text-center select-none whitespace-nowrap"
+            style={{
+              width: '285px',
+              maxWidth: '100%',
+              height: '48px',
+              fontFamily: "'Gotham', 'Gotham Book', sans-serif",
+              fontStyle: 'normal',
+              fontWeight: 350,
+              fontSize: '40px',
+              lineHeight: '48px',
+              color: '#25364A',
+              flex: 'none',
+              order: 0,
+              flexGrow: 0,
+            }}
+          >
+            Award Wining
+          </h2>
+        </div>
       </div>
 
       <div className="w-full h-[240px] overflow-hidden relative flex-none p-0 m-0">

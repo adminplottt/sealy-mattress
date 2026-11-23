@@ -77,7 +77,7 @@ export default function OrthopedicResearchSection({ onClaimOffer }) {
           </div>
         </div>
 
-        <div className="w-full lg:w-[620px] xl:w-[650px] h-[240px] sm:h-[360px] lg:h-[452px] overflow-hidden rounded-none shadow-sm bg-white/40 flex-none">
+        <div className="w-full lg:w-[620px] xl:w-[650px] h-[240px] sm:h-[360px] lg:h-[452px] overflow-hidden rounded-none shadow-none bg-white/40 flex-none">
           <img
             src="/images/Orthopedic research.png"
             alt="Backed by orthopedic research"

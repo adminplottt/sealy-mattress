@@ -36,48 +36,40 @@ const TESTIMONIALS = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative w-full min-h-[440px] lg:min-h-[459px] bg-[#D7F0FF] overflow-hidden py-10 lg:py-0 -mt-[1px]">
-      <div className="relative w-full max-w-[1440px] min-h-[440px] lg:min-h-[459px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col justify-center">
-        <div
-          className="mx-auto flex flex-col items-center pt-0 lg:pt-[40px] flex-none h-auto lg:h-[96px]"
+    <section className="relative w-full min-h-[440px] lg:min-h-[459px] bg-[#D7F0FF] overflow-hidden py-10 lg:py-0 -mt-[1px] flex flex-col justify-center">
+      <div className="relative w-full max-w-[1127px] mx-auto px-4 sm:px-6 lg:px-0 flex flex-col items-center justify-center pt-0 lg:pt-[40px] pb-0 lg:pb-[45px]">
+        {/* Better sleep Happier mornings Heading */}
+        <h2
+          className="figma-better-sleep select-none"
           style={{
             width: '1127px',
             maxWidth: '100%',
+            height: '96px',
+            fontFamily: "'Gotham', 'Gotham Book', 'Gotham-Book', sans-serif",
+            fontStyle: 'normal',
+            fontWeight: 350,
+            fontSize: '40px',
+            lineHeight: '48px',
+            textAlign: 'center',
+            color: '#25364A',
             flex: 'none',
             order: 0,
+            alignSelf: 'stretch',
             flexGrow: 0,
           }}
         >
-          <h2
-            className="figma-better-sleep select-none"
-            style={{
-              width: '1127px',
-              height: '96px',
-              fontFamily: "'Gotham'",
-              fontStyle: 'normal',
-              fontWeight: 350,
-              fontSize: '40px',
-              lineHeight: '48px',
-              textAlign: 'center',
-              color: '#25364A',
-              flex: 'none',
-              order: 0,
-              alignSelf: 'stretch',
-              flexGrow: 0,
-            }}
-          >
-            Better sleep
-            <br />
-            Happier mornings
-          </h2>
-        </div>
+          Better sleep
+          <br />
+          Happier mornings
+        </h2>
 
-        <div className="w-full mt-6 sm:mt-8 lg:mt-[36px] pb-0 lg:pb-[45px]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
+        {/* 3 Review Cards Container - exactly 1127px wide, matching heading */}
+        <div className="w-full max-w-[1127px] mt-6 sm:mt-8 lg:mt-[36px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 lg:gap-[23.5px]">
             {TESTIMONIALS.map((review) => (
               <div
                 key={review.id}
-                className="relative w-full min-h-[238px] h-auto sm:h-[238px] bg-[#FFFFFF] rounded-[4px] shadow-sm flex flex-col items-center justify-start pt-[36px] sm:pt-[43px] pb-[60px] sm:pb-0 px-4 sm:px-6 text-center select-none"
+                className="relative w-full min-h-[238px] h-auto sm:h-[238px] bg-[#FFFFFF] rounded-none shadow-none flex flex-col items-center justify-start pt-[36px] sm:pt-[43px] pb-[60px] sm:pb-0 px-4 sm:px-6 text-center select-none"
               >
                 <FiveStars />
 
@@ -90,7 +82,7 @@ export default function TestimonialsSection() {
                 </p>
 
                 <p
-                  className="font-optima text-[15px] sm:text-[16px] leading-[15px] text-center text-[#000000] whitespace-nowrap select-none absolute left-0 right-0 bottom-[24px] sm:bottom-[43px]"
+                  className="font-optima text-[15px] sm:text-[16px] leading-[15px] text-center text-[#000000] whitespace-nowrap select-none absolute left-0 right-0 bottom-[24px] sm:bottom-[36px]"
                   style={{
                     fontFamily: "'Optima', sans-serif",
                     fontStyle: 'normal',

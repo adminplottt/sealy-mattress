@@ -36,34 +36,43 @@ export default function TheSealyDifference() {
         </div>
       </div>
 
-      <div className="relative w-full max-w-[1440px] min-h-[260px] lg:min-h-[311px] mx-auto px-4 sm:px-10 lg:px-12 py-8 sm:py-10 lg:py-[55px] flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 sm:gap-8 lg:gap-12">
-        <div className="w-full lg:w-[596px] flex flex-col justify-center items-start flex-none">
-          <p className="font-dmsans font-semibold text-[10px] leading-[15px] tracking-[2.2px] uppercase text-[#527C99] flex-none order-0 whitespace-nowrap">
-            The Sealy difference
-          </p>
-
-          <div className="pt-[14px] lg:pt-[24px] flex-none order-1 w-full">
-            <h2
-              className="figma-deeper-rest select-none"
-              style={{
-                width: '596px',
-                height: '90px',
-                fontFamily: "'Gotham', sans-serif",
-                fontStyle: 'normal',
-                fontWeight: 350,
-                fontSize: '40px',
-                lineHeight: '45px',
-                color: '#25364A',
-                flex: 'none',
-                order: 0,
-                flexGrow: 0,
-              }}
-            >
-              Made for deeper rest.
-              <br />
-              Designed for better mornings
-            </h2>
-          </div>
+      <div className="relative w-full max-w-[1440px] min-h-[260px] lg:min-h-[311px] mx-auto px-4 sm:px-8 lg:px-[63px] pt-8 sm:pt-10 lg:pt-[78px] pb-8 sm:pb-10 lg:pb-[75px] flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 sm:gap-8 lg:gap-12">
+        <div
+          className="w-full lg:w-[596px] flex flex-col justify-start items-start flex-none"
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            padding: '0px',
+            width: '596px',
+            maxWidth: '100%',
+            height: '90px',
+            flex: 'none',
+            order: 0,
+            flexGrow: 0,
+          }}
+        >
+          <h2
+            className="figma-deeper-rest select-none"
+            style={{
+              width: '596px',
+              maxWidth: '100%',
+              height: '90px',
+              fontFamily: "'Gotham', 'Gotham Book', sans-serif",
+              fontStyle: 'normal',
+              fontWeight: 350,
+              fontSize: '40px',
+              lineHeight: '45px',
+              color: '#25364A',
+              flex: 'none',
+              order: 0,
+              flexGrow: 0,
+            }}
+          >
+            Made for deeper rest
+            <br />
+            Designed for better mornings
+          </h2>
         </div>
 
         <div className="w-full lg:w-[401.94px] lg:max-w-[500px] flex flex-col justify-start items-start flex-none">

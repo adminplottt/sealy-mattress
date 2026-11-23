@@ -12,7 +12,8 @@ export default function MattressCarouselSection({ onClaimOffer }) {
               flexDirection: 'column',
               alignItems: 'flex-start',
               padding: '0px',
-              width: '538px',
+              width: '483px',
+              maxWidth: '100%',
               height: '110px',
               flex: 'none',
               order: 0,
@@ -22,16 +23,23 @@ export default function MattressCarouselSection({ onClaimOffer }) {
             <h2
               className="figma-heading-2-text select-none"
               style={{
-                width: '538px',
-                fontFamily: "'Gotham', sans-serif",
+                width: '483px',
+                maxWidth: '100%',
+                height: '110px',
+                fontFamily: "'Gotham', 'Gotham Book', sans-serif",
                 fontStyle: 'normal',
                 fontWeight: 350,
                 fontSize: '40px',
-                lineHeight: '45px',
+                lineHeight: '48px',
                 color: '#25364A',
+                flex: 'none',
+                order: 0,
+                flexGrow: 0,
               }}
             >
-              Find your perfect comfort.
+              Find your perfect
+              <br />
+              comfort.
             </h2>
           </div>
 

@@ -89,6 +89,24 @@
 }
 
 /* Embedded Optima Fonts */
+
+@font-face {
+  font-family: 'Gotham Book';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url('/fonts/GothamBook.woff') format('woff'),
+       local('Gotham Book'), local('Gotham-Book'), local('Gotham');
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url('/fonts/GothamBook.woff') format('woff'),
+       local('Gotham Book'), local('Gotham-Book'), local('Gotham');
+}
 @font-face {
   font-family: 'Optima';
   font-style: normal;

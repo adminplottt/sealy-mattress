@@ -75,7 +75,7 @@ export default function ComfortSection() {
             {STATS_DATA.map((item) => (
               <article
                 key={item.id}
-                className="w-full h-auto min-h-[200px] lg:min-h-[233.85px] p-[20px_18px] sm:p-[25px_22px] bg-[#D7F0FF] rounded-none flex flex-col justify-center items-start text-left shadow-sm select-none"
+                className="w-full h-auto min-h-[200px] lg:min-h-[233.85px] p-[20px_18px] sm:p-[25px_22px] bg-[#D7F0FF] rounded-none flex flex-col justify-center items-start text-left shadow-none select-none"
               >
                 <div className="flex-none order-0 w-[50px] h-[50px] flex items-center justify-start">
                   <img
