@@ -36,7 +36,7 @@ export default function TheSealyDifference() {
         </div>
       </div>
 
-      <div className="relative w-full max-w-[1440px] min-h-[260px] lg:min-h-[311px] mx-auto px-4 sm:px-8 lg:px-[63px] pt-8 sm:pt-10 lg:pt-[78px] pb-8 sm:pb-10 lg:pb-[75px] flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 sm:gap-8 lg:gap-12">
+      <div className="relative w-full max-w-[1440px] min-h-[260px] lg:min-h-[311px] mx-auto px-4 sm:px-8 lg:px-[63px] pt-12 sm:pt-10 lg:pt-[78px] pb-12 sm:pb-10 lg:pb-[75px] flex flex-col lg:flex-row lg:justify-between lg:items-start gap-3 sm:gap-8 lg:gap-12">
         <div className="figma-deeper-rest-container w-full lg:w-[596px]">
           <h2 className="figma-deeper-rest select-none">
             Made for deeper rest
