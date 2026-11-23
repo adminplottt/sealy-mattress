@@ -19,7 +19,17 @@ export default function HeroSection({ onClaimOffer }) {
 
           <div className="w-full max-w-[560px] flex flex-col justify-center items-center py-[14px] sm:py-[16px] flex-none order-1">
             <p className="w-full font-optima font-normal text-[14px] sm:text-[16px] leading-[22px] sm:leading-[27px] text-center text-[#E7ECED]">
-              Exchange your old mattress and enjoy ₹10,000 OFF on your new Sealy mattress.
+              Exchange your old mattress and enjoy{' '}
+              <span className="relative inline-block whitespace-nowrap text-[#B0A774] font-medium">
+                <span className="relative z-10">₹10,000 OFF</span>
+                <img
+                  src="/images/brush-stroke.png"
+                  alt=""
+                  aria-hidden="true"
+                  className="absolute left-[-2%] -bottom-[4px] sm:-bottom-[6px] w-[104%] h-auto pointer-events-none select-none max-w-none"
+                />
+              </span>{' '}
+              on your new Sealy mattress.
             </p>
           </div>
 
@@ -27,14 +37,22 @@ export default function HeroSection({ onClaimOffer }) {
             <button
               type="button"
               onClick={onClaimOffer}
-              className="w-full sm:w-[321px] max-w-[321px] h-[58px] py-[18px] sm:py-[20px] px-4 sm:px-[26px] bg-[#25364A] hover:bg-[#2e425a] active:bg-[#1c2938] rounded-[4px] flex flex-row items-center justify-between gap-3 sm:gap-[30px] transition-colors duration-200 cursor-pointer shadow-lg group focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+              className="w-full sm:w-[321px] max-w-[321px] h-[58px] py-[18px] sm:py-[20px] px-4 sm:px-[26px] bg-[#FFFFFF] hover:bg-white/95 active:scale-[0.99] rounded-[4px] flex flex-row items-center justify-between gap-3 sm:gap-[30px] transition-all duration-200 cursor-pointer shadow-lg group focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
             >
               <span
-                className="w-auto sm:w-[221px] h-[17px] font-optima text-[14px] sm:text-[16px] leading-[16px] text-center uppercase text-white whitespace-nowrap select-none flex items-center justify-center"
+                className="w-auto sm:w-[221px] h-[17px] font-optima text-[14px] sm:text-[16px] leading-[16px] text-center uppercase text-[#25364A] whitespace-nowrap select-none flex items-center justify-center antialiased"
                 style={{
+                  width: '221px',
+                  height: '17px',
                   fontFamily: "'Optima', sans-serif",
+                  fontStyle: 'normal',
                   fontWeight: 550,
+                  fontSize: '16px',
+                  lineHeight: '16px',
+                  textAlign: 'center',
                   letterSpacing: '1.32px',
+                  textTransform: 'uppercase',
+                  color: '#25364A',
                 }}
               >
                 Claim your ₹10,000 off
@@ -50,8 +68,8 @@ export default function HeroSection({ onClaimOffer }) {
                 >
                   <path
                     d="M3 9H15M10.5 4.5L15 9L10.5 13.5"
-                    stroke="#FFFFFF"
-                    strokeWidth="1.2"
+                    stroke="#25364A"
+                    strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
