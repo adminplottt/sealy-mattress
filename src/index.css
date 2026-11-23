@@ -515,11 +515,14 @@ html, body {
   width: 119px;
   height: 34px;
   left: 334px;
-  top: 291px;
+  top: 294px;
   background: #25364A;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.2s ease;
 }
 
@@ -533,11 +536,6 @@ html, body {
 
 /* Get Your Offer text */
 .figma-btn-text {
-  position: absolute;
-  width: 99px;
-  height: 14px;
-  left: 10px;
-  top: 10px;
   font-family: 'Optima', sans-serif;
   font-style: normal;
   font-weight: 550;
@@ -545,6 +543,8 @@ html, body {
   line-height: 28px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   color: #FFFFFF;
   white-space: nowrap;
   user-select: none;
@@ -573,11 +573,15 @@ html, body {
     right: 12px;
     width: 105px;
     height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .figma-btn-text {
-    left: 6px;
-    top: 9px;
-    width: 93px;
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
