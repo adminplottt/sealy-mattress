@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 const STATS_DATA = [
   {
@@ -43,6 +43,36 @@ export default function ComfortSection({ onClaimOffer }) {
   const isDown = useRef(false);
   const startX = useRef(0);
   const scrollLeftPos = useRef(0);
+
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const handleScroll = () => {
+    if (!scrollRef.current) return;
+    const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+    setCanScrollLeft(scrollLeft > 6);
+    setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 6);
+  };
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => el.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleScrollPrev = () => {
+    if (!scrollRef.current) return;
+    const cardWidth = (scrollRef.current.clientWidth - 12) / 2;
+    scrollRef.current.scrollBy({ left: -(cardWidth + 12), behavior: 'smooth' });
+  };
+
+  const handleScrollNext = () => {
+    if (!scrollRef.current) return;
+    const cardWidth = (scrollRef.current.clientWidth - 12) / 2;
+    scrollRef.current.scrollBy({ left: cardWidth + 12, behavior: 'smooth' });
+  };
 
   const handleMouseDown = (e) => {
     if (!scrollRef.current) return;
@@ -89,6 +119,7 @@ export default function ComfortSection({ onClaimOffer }) {
           <div className="block sm:hidden">
             <div
               ref={scrollRef}
+              onScroll={handleScroll}
               onMouseDown={handleMouseDown}
               onMouseLeave={handleMouseLeave}
               onMouseUp={handleMouseUp}
@@ -130,8 +161,43 @@ export default function ComfortSection({ onClaimOffer }) {
               ))}
             </div>
 
+            {/* Mobile Navigation Arrows (Back & Forth) */}
+            <div className="flex items-center justify-center gap-4 mt-4">
+              <button
+                type="button"
+                onClick={handleScrollPrev}
+                disabled={!canScrollLeft}
+                aria-label="Previous card"
+                className={`w-[36px] h-[36px] rounded-full border border-white/40 flex items-center justify-center transition-all duration-200 select-none ${
+                  canScrollLeft
+                    ? 'bg-white/10 active:bg-white/30 text-white cursor-pointer hover:border-white hover:bg-white/20'
+                    : 'opacity-25 text-white/40 cursor-not-allowed'
+                }`}
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              <button
+                type="button"
+                onClick={handleScrollNext}
+                disabled={!canScrollRight}
+                aria-label="Next card"
+                className={`w-[36px] h-[36px] rounded-full border border-white/40 flex items-center justify-center transition-all duration-200 select-none ${
+                  canScrollRight
+                    ? 'bg-white/10 active:bg-white/30 text-white cursor-pointer hover:border-white hover:bg-white/20'
+                    : 'opacity-25 text-white/40 cursor-not-allowed'
+                }`}
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
             {/* Center "Find your mattress" Button */}
-            <div className="flex items-center justify-center mt-6">
+            <div className="flex items-center justify-center mt-5">
               <a
                 href="#range"
                 onClick={handleButtonClick}
