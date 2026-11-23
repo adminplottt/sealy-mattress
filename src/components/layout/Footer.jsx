@@ -99,7 +99,7 @@ export default function Footer() {
 
             <form
               onSubmit={handleSubmit}
-              className="mt-4 lg:mt-[17px] w-full max-w-[393px] h-[41px] border border-[#000000] rounded-[4px] relative bg-transparent focus-within:ring-1 focus-within:ring-[#25364A]"
+              className="mt-4 lg:mt-[17px] w-full max-w-[393px] h-[41px] border border-[#000000] rounded-[4px] relative bg-transparent"
             >
               <input
                 type="email"
@@ -107,13 +107,16 @@ export default function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter Your mail to get exclusive offer"
-                className="absolute left-[8px] top-[12px] right-[92px] outline-none bg-transparent placeholder:text-[#000000] text-[#000000] text-[12px] leading-[13px] font-optima"
+                className="absolute left-[8px] top-[12px] right-[92px] outline-none focus:outline-none focus:ring-0 border-0 bg-transparent placeholder:text-[#000000] text-[#000000] text-[12px] leading-[13px] font-optima"
                 style={{
                   fontFamily: "'Optima', sans-serif",
                   fontWeight: 400,
                   fontSize: '12px',
                   lineHeight: '13px',
                   color: '#000000',
+                  outline: 'none',
+                  boxShadow: 'none',
+                  border: 'none',
                 }}
               />
 
