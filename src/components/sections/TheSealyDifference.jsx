@@ -37,38 +37,8 @@ export default function TheSealyDifference() {
       </div>
 
       <div className="relative w-full max-w-[1440px] min-h-[260px] lg:min-h-[311px] mx-auto px-4 sm:px-8 lg:px-[63px] pt-8 sm:pt-10 lg:pt-[78px] pb-8 sm:pb-10 lg:pb-[75px] flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 sm:gap-8 lg:gap-12">
-        <div
-          className="w-full lg:w-[596px] flex flex-col justify-start items-start flex-none"
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            padding: '0px',
-            width: '596px',
-            maxWidth: '100%',
-            height: '90px',
-            flex: 'none',
-            order: 0,
-            flexGrow: 0,
-          }}
-        >
-          <h2
-            className="figma-deeper-rest select-none"
-            style={{
-              width: '596px',
-              maxWidth: '100%',
-              height: '90px',
-              fontFamily: "'Gotham', 'Gotham Book', sans-serif",
-              fontStyle: 'normal',
-              fontWeight: 350,
-              fontSize: '40px',
-              lineHeight: '45px',
-              color: '#25364A',
-              flex: 'none',
-              order: 0,
-              flexGrow: 0,
-            }}
-          >
+        <div className="figma-deeper-rest-container w-full lg:w-[596px]">
+          <h2 className="figma-deeper-rest select-none">
             Made for deeper rest
             <br />
             Designed for better mornings

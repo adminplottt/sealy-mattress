@@ -9,34 +9,8 @@ export default function HeritageSection({ onClaimOffer }) {
             </p>
           </div>
 
-          <div
-            className="mt-3 sm:mt-4 w-full lg:w-[316px] h-auto lg:h-[96px] flex-none"
-            style={{
-              width: '316px',
-              maxWidth: '100%',
-              height: '96px',
-              flex: 'none',
-              order: 0,
-              flexGrow: 0,
-            }}
-          >
-            <h2
-              className="figma-legacy-built w-full font-gotham text-2xl sm:text-3xl lg:text-[40px] leading-tight lg:leading-[48px] text-[#25364A] select-none"
-              style={{
-                width: '316px',
-                maxWidth: '100%',
-                height: '96px',
-                fontFamily: "'Gotham', 'Gotham Book', sans-serif",
-                fontStyle: 'normal',
-                fontWeight: 350,
-                fontSize: '40px',
-                lineHeight: '48px',
-                color: '#25364A',
-                flex: 'none',
-                order: 0,
-                flexGrow: 0,
-              }}
-            >
+          <div className="figma-legacy-built-container mt-3 sm:mt-4 w-full lg:w-[316px]">
+            <h2 className="figma-legacy-built select-none">
               A legacy built
               <br />
               on better sleep.

@@ -37,23 +37,10 @@ export default function SpinalAlignmentSection({ onClaimOffer }) {
         </div>
 
         <div className="w-full lg:max-w-[450px] flex flex-col justify-start">
-          <h2
-            className="w-full lg:w-[419px] h-auto lg:h-[96px] font-gotham text-2xl sm:text-3xl lg:text-[40px] leading-tight lg:leading-[48px] text-[#25364A] select-none flex-none"
-            style={{
-              width: '419px',
-              maxWidth: '100%',
-              height: '96px',
-              fontFamily: "'Gotham', sans-serif",
-              fontStyle: 'normal',
-              fontWeight: 350,
-              fontSize: '40px',
-              lineHeight: '48px',
-              color: '#25364A',
-            }}
-          >
+          <h2 className="figma-spinal-heading select-none">
             Spinal alignment for
-            <br />
-            your best sleep
+            <br className="hidden lg:inline" />
+            {' '}your best sleep
           </h2>
 
           <p className="mt-3 lg:mt-[10px] font-optima font-normal text-[12px] leading-[17px] text-[#000000]">

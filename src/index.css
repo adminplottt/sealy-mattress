@@ -100,136 +100,81 @@ html, body {
 }
 
 /* ==========================================================================
-   Figma Exact Specifications
+   Figma Exact Specifications (Desktop) & Mobile Responsive Rules
    ========================================================================== */
 
-/* Made for deeper rest Designed for better mornings */
+/* 1. Made for deeper rest Designed for better mornings */
+.figma-deeper-rest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-deeper-rest-container {
+    width: 596px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-deeper-rest-container {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
 .figma-deeper-rest {
-  width: 596px;
-  height: 90px;
-  font-family: 'Gotham', 'Gotham Book', sans-serif;
+  font-family: 'Gotham', 'Gotham Medium', sans-serif;
   font-style: normal;
-  font-weight: 350;
-  font-size: 40px;
-  line-height: 45px;
+  font-weight: 500;
   color: #25364A;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 1024px) {
+  .figma-deeper-rest {
+    width: 596px;
+    height: 90px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 1023px) {
   .figma-deeper-rest {
     width: 100% !important;
     height: auto !important;
     font-size: 26px !important;
-    line-height: 32px !important;
-  }
-}
-
-/* Better sleep Happier mornings */
-.figma-better-sleep {
-  width: 1127px;
-  height: 96px;
-
-  font-family: 'Gotham', 'Gotham Book', 'Gotham-Book', sans-serif;
-  font-style: normal;
-  font-weight: 350;
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-
-  color: #25364A;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
-@media (max-width: 1150px) {
-  .figma-better-sleep {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
-}
-
-@media (max-width: 640px) {
-  .figma-better-sleep {
-    font-size: 26px !important;
-    line-height: 32px !important;
-  }
-}
-
-/* A legacy built on better sleep. */
-.figma-legacy-built {
-  width: 316px;
-  height: 96px;
-
-  font-family: 'Gotham', 'Gotham Book', sans-serif;
-  font-style: normal;
-  font-weight: 350;
-  font-size: 40px;
-  line-height: 48px;
-
-  color: #25364A;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-@media (max-width: 640px) {
-  .figma-legacy-built {
-    width: 100% !important;
-    height: auto !important;
-    font-size: 28px !important;
     line-height: 34px !important;
   }
 }
 
-/* Award Wining */
-.figma-award-winning-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  width: 285px;
-  height: 48px;
-}
-
-.figma-award-winning-text {
-  width: 285px;
-  height: 48px;
-  font-family: 'Gotham', 'Gotham Book', sans-serif;
-  font-style: normal;
-  font-weight: 350;
-  font-size: 40px;
-  line-height: 48px;
-  color: #25364A;
-  text-align: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-/* Heading 2: Find your perfect comfort. (Container) */
+/* 2. Find your perfect comfort. */
 .figma-heading-2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  width: 483px;
-  height: 110px;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 1024px) {
+  .figma-heading-2 {
+    width: 483px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 1023px) {
   .figma-heading-2 {
     width: 100% !important;
     height: auto !important;
@@ -237,11 +182,224 @@ html, body {
 }
 
 .figma-heading-2-text {
-  width: 483px;
-  height: 110px;
-  font-family: 'Gotham', 'Gotham Book', sans-serif;
+  font-family: 'Gotham', 'Gotham Medium', sans-serif;
   font-style: normal;
-  font-weight: 350;
+  font-weight: 500;
+  color: #25364A;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-heading-2-text {
+    width: 483px;
+    height: 110px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-heading-2-text {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+}
+
+/* 3. Award Wining */
+.figma-award-winning-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-award-winning-container {
+    width: 285px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-award-winning-container {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.figma-award-winning-text {
+  font-family: 'Gotham', 'Gotham Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #25364A;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-award-winning-text {
+    width: 285px;
+    height: 48px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-award-winning-text {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+}
+
+/* 4. Comfort you can count on */
+.figma-comfort-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-comfort-container {
+    width: 1127px;
+    height: 68px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-comfort-container {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.figma-comfort-heading {
+  font-family: 'Gotham', 'Gotham Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-comfort-heading {
+    width: 1127px;
+    height: 68px;
+    font-size: 40px;
+    line-height: 68px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-comfort-heading {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+}
+
+/* 5. Spinal alignment for your best sleep */
+.figma-spinal-heading {
+  font-family: 'Gotham', 'Gotham Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #25364A;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-spinal-heading {
+    width: 419px;
+    height: 96px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-spinal-heading {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+}
+
+/* 6. Backed by orthopedic research */
+.figma-orthopedic-heading {
+  font-family: 'Gotham', 'Gotham Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #25364A;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-orthopedic-heading {
+    width: 419px;
+    height: 96px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-orthopedic-heading {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+}
+
+/* 7. A legacy built on better sleep. */
+.figma-legacy-built-container {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-legacy-built-container {
+    width: 316px;
+    height: 96px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-legacy-built-container {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.figma-legacy-built {
+  font-family: 'Gotham', 'Gotham Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 40px;
   line-height: 48px;
   color: #25364A;
@@ -250,10 +408,52 @@ html, body {
   flex-grow: 0;
 }
 
-@media (max-width: 640px) {
-  .figma-heading-2-text {
+@media (min-width: 1024px) {
+  .figma-legacy-built {
+    width: 316px;
+    height: 96px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-legacy-built {
     width: 100% !important;
-    font-size: 28px !important;
+    height: auto !important;
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+}
+
+/* 8. Better sleep Happier mornings */
+.figma-better-sleep {
+  font-family: 'Gotham', 'Gotham Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #25364A;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+@media (min-width: 1024px) {
+  .figma-better-sleep {
+    width: 1127px;
+    height: 96px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .figma-better-sleep {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 26px !important;
     line-height: 34px !important;
   }
 }

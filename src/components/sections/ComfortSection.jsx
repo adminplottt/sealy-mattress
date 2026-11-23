@@ -40,32 +40,8 @@ export default function ComfortSection() {
   return (
     <section className="relative w-full min-h-[420px] lg:min-h-[437px] bg-[#25364A] overflow-hidden py-10 lg:py-0">
       <div className="relative w-full max-w-[1440px] min-h-[420px] lg:min-h-[437px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col justify-center">
-        <div
-          className="w-full lg:w-[1127px] mx-auto flex flex-col items-center p-0 flex-none order-0 pt-0 lg:pt-[40px]"
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            padding: '0px',
-            width: '1127px',
-            maxWidth: '100%',
-            height: '68px',
-            flex: 'none',
-            order: 0,
-            flexGrow: 0,
-          }}
-        >
-          <h2
-            className="w-full font-gotham text-2xl sm:text-3xl lg:text-[40px] leading-tight lg:leading-[68px] text-center text-white select-none"
-            style={{
-              fontFamily: "'Gotham', sans-serif",
-              fontStyle: 'normal',
-              fontWeight: 350,
-              fontSize: '40px',
-              lineHeight: '68px',
-              color: '#FFFFFF',
-            }}
-          >
+        <div className="figma-comfort-container w-full lg:w-[1127px] h-auto lg:h-[68px] mx-auto flex flex-col items-center p-0 flex-none order-0 pt-0 lg:pt-[40px]">
+          <h2 className="figma-comfort-heading select-none">
             Comfort you can count on
           </h2>
         </div>

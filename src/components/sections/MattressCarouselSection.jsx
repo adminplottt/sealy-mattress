@@ -5,38 +5,8 @@ export default function MattressCarouselSection({ onClaimOffer }) {
     <section id="range" className="relative w-full min-h-[560px] lg:min-h-[610px] bg-[#E9ECE8] overflow-hidden select-none scroll-mt-6">
       <div className="relative w-full max-w-[1440px] min-h-[560px] lg:min-h-[610px] mx-auto pt-[36px] lg:pt-[43px] pb-5 lg:pb-6">
         <div className="w-full px-4 sm:px-10 lg:px-12 flex flex-col lg:flex-row justify-between items-start gap-4 sm:gap-6 lg:gap-[70px]">
-          <div
-            className="figma-heading-2"
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              padding: '0px',
-              width: '483px',
-              maxWidth: '100%',
-              height: '110px',
-              flex: 'none',
-              order: 0,
-              flexGrow: 0,
-            }}
-          >
-            <h2
-              className="figma-heading-2-text select-none"
-              style={{
-                width: '483px',
-                maxWidth: '100%',
-                height: '110px',
-                fontFamily: "'Gotham', 'Gotham Book', sans-serif",
-                fontStyle: 'normal',
-                fontWeight: 350,
-                fontSize: '40px',
-                lineHeight: '48px',
-                color: '#25364A',
-                flex: 'none',
-                order: 0,
-                flexGrow: 0,
-              }}
-            >
+          <div className="figma-heading-2 w-full lg:w-[483px]">
+            <h2 className="figma-heading-2-text select-none">
               Find your perfect
               <br />
               comfort.

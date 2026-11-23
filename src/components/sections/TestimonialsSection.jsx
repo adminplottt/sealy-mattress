@@ -39,25 +39,7 @@ export default function TestimonialsSection() {
     <section className="relative w-full min-h-[440px] lg:min-h-[459px] bg-[#D7F0FF] overflow-hidden py-10 lg:py-0 -mt-[1px] flex flex-col justify-center">
       <div className="relative w-full max-w-[1127px] mx-auto px-4 sm:px-6 lg:px-0 flex flex-col items-center justify-center pt-0 lg:pt-[40px] pb-0 lg:pb-[45px]">
         {/* Better sleep Happier mornings Heading */}
-        <h2
-          className="figma-better-sleep select-none"
-          style={{
-            width: '1127px',
-            maxWidth: '100%',
-            height: '96px',
-            fontFamily: "'Gotham', 'Gotham Book', 'Gotham-Book', sans-serif",
-            fontStyle: 'normal',
-            fontWeight: 350,
-            fontSize: '40px',
-            lineHeight: '48px',
-            textAlign: 'center',
-            color: '#25364A',
-            flex: 'none',
-            order: 0,
-            alignSelf: 'stretch',
-            flexGrow: 0,
-          }}
-        >
+        <h2 className="figma-better-sleep select-none">
           Better sleep
           <br />
           Happier mornings
