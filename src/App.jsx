@@ -30,7 +30,7 @@ function App() {
       <MattressCarouselSection onClaimOffer={handleOpenClaimOffer} />
       <AwardWinningSection />
       <HeritageSection onClaimOffer={handleOpenClaimOffer} />
-      <ComfortSection />
+      <ComfortSection onClaimOffer={handleOpenClaimOffer} />
       <SpinalAlignmentSection onClaimOffer={handleOpenClaimOffer} />
       <OrthopedicResearchSection onClaimOffer={handleOpenClaimOffer} />
       <TestimonialsSection />

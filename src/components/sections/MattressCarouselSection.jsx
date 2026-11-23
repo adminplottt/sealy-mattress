@@ -35,20 +35,22 @@ export default function MattressCarouselSection({ onClaimOffer }) {
                   />
                 </div>
 
-                <h3 className="figma-card-title select-none">
-                  {mattress.name}
-                </h3>
+                <div className="figma-card-bottom">
+                  <h3 className="figma-card-title select-none">
+                    {mattress.name}
+                  </h3>
 
-                <button
-                  type="button"
-                  onClick={onClaimOffer}
-                  className="figma-btn-frame-36"
-                  aria-label={`Get offer for ${mattress.name}`}
-                >
-                  <span className="figma-btn-text">
-                    Get Your Offer
-                  </span>
-                </button>
+                  <button
+                    type="button"
+                    onClick={onClaimOffer}
+                    className="figma-btn-frame-36"
+                    aria-label={`Get offer for ${mattress.name}`}
+                  >
+                    <span className="figma-btn-text">
+                      Get Your Offer
+                    </span>
+                  </button>
+                </div>
               </div>
             ))}
           </div>

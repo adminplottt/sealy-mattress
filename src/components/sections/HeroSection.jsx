@@ -5,7 +5,7 @@ export default function HeroSection({ onClaimOffer }) {
     <section
       className="relative w-full h-[851px] min-h-[851px] overflow-hidden bg-black"
       style={{
-        backgroundImage: "url('/images/Hero.png')",
+        backgroundImage: "url('/images/hero.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center bottom',
         backgroundRepeat: 'no-repeat',

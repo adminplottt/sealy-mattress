@@ -24,6 +24,14 @@ const BULLETS = [
 ];
 
 export default function SpinalAlignmentSection({ onClaimOffer }) {
+  const handleNavigateToRange = (e) => {
+    e.preventDefault();
+    const rangeSection = document.getElementById('range');
+    if (rangeSection) {
+      rangeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative w-full min-h-0 lg:min-h-[550px] bg-[#F4F5F0] overflow-hidden pt-12 pb-3 sm:pt-14 sm:pb-6 lg:py-0 -mt-[1px]">
       <div className="relative w-full max-w-[1440px] min-h-0 lg:min-h-[550px] mx-auto px-4 sm:px-10 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-12 pt-2 pb-0 sm:pt-4 sm:pb-0 lg:pt-[65px] lg:pb-[29px]">
@@ -60,15 +68,15 @@ export default function SpinalAlignmentSection({ onClaimOffer }) {
           </ul>
 
           <div className="mt-6 lg:mt-[17px]">
-            <button
-              type="button"
-              onClick={onClaimOffer}
+            <a
+              href="#range"
+              onClick={handleNavigateToRange}
               className="w-[185px] sm:w-[196px] h-[45px] sm:h-[48px] px-5 sm:px-[26px] py-3 sm:py-[20px] bg-[#25364A] hover:bg-[#2d425b] active:bg-[#1c2938] rounded-[4px] flex items-center justify-center transition-colors duration-200 cursor-pointer shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
             >
               <span className="font-optima font-[550] text-[13px] sm:text-[14px] leading-[16px] text-center tracking-[1.32px] capitalize text-white select-none whitespace-nowrap">
                 Find Your Mattress
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
