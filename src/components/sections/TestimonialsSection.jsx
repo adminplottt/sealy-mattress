@@ -35,6 +35,14 @@ const TESTIMONIALS = [
 ];
 
 export default function TestimonialsSection() {
+  const handleNavigateToRange = (e) => {
+    e.preventDefault();
+    const rangeSection = document.getElementById('range');
+    if (rangeSection) {
+      rangeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative w-full min-h-[440px] lg:min-h-[459px] bg-[#D7F0FF] overflow-hidden py-10 lg:py-0 -mt-[1px] flex flex-col justify-center">
       <div className="relative w-full max-w-[1127px] mx-auto px-4 sm:px-6 lg:px-0 flex flex-col items-center justify-center pt-0 lg:pt-[40px] pb-0 lg:pb-[45px]">
@@ -78,6 +86,26 @@ export default function TestimonialsSection() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Mobile-only "Find your mattress" Button */}
+        <div className="flex sm:hidden items-center justify-center mt-6">
+          <a
+            href="#range"
+            onClick={handleNavigateToRange}
+            className="w-[190px] h-[45px] px-6 bg-[#25364A] hover:bg-[#2d425b] active:scale-[0.98] text-white rounded-[4px] flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25364A]"
+          >
+            <span
+              className="font-optima text-[13px] leading-[16px] text-center tracking-[1.32px] capitalize text-white select-none whitespace-nowrap"
+              style={{
+                fontFamily: "'Optima', sans-serif",
+                fontWeight: 550,
+                letterSpacing: '1.32px',
+              }}
+            >
+              Find your mattress
+            </span>
+          </a>
         </div>
       </div>
     </section>

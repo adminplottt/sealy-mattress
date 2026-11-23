@@ -1,16 +1,47 @@
 import { useState } from 'react';
+import { GOOGLE_SHEET_URL } from '../../config';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email.trim()) {
-      setSubscribed(true);
-      setEmail('');
-      setTimeout(() => setSubscribed(false), 4000);
+    const trimmedEmail = email.trim();
+    if (!trimmedEmail) return;
+
+    setIsSubmitting(true);
+
+    const payload = {
+      name: '',
+      email: trimmedEmail,
+      phone: '',
+      city: '',
+      preferences: [`Get In Touch (${trimmedEmail})`],
+      source: 'Get In Touch',
+      timestamp: new Date().toISOString(),
+    };
+
+    if (GOOGLE_SHEET_URL) {
+      try {
+        await fetch(GOOGLE_SHEET_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        });
+      } catch (err) {
+        console.error('Error submitting Get In Touch email:', err);
+      }
     }
+
+    setIsSubmitting(false);
+    setSubscribed(true);
+    setEmail('');
+    setTimeout(() => setSubscribed(false), 5000);
   };
 
   return (
@@ -88,7 +119,8 @@ export default function Footer() {
 
               <button
                 type="submit"
-                className="absolute right-[9px] top-[9px] w-[81px] h-[23px] rounded-none flex items-center justify-center transition-colors duration-200 cursor-pointer hover:bg-[#2e425a] active:bg-[#1c2938]"
+                disabled={isSubmitting}
+                className="absolute right-[9px] top-[9px] w-[81px] h-[23px] rounded-none flex items-center justify-center transition-colors duration-200 cursor-pointer hover:bg-[#2e425a] active:bg-[#1c2938] disabled:opacity-70 disabled:cursor-not-allowed"
                 style={{
                   background: '#25364A',
                   borderRadius: '0px',
@@ -105,15 +137,28 @@ export default function Footer() {
                     textAlign: 'center',
                   }}
                 >
-                  Submit
+                  {isSubmitting ? 'Sending...' : 'Submit'}
                 </span>
               </button>
             </form>
 
             {subscribed && (
-              <p className="mt-2 text-xs text-green-700 font-optima select-none">
-                Thank you! We will get in touch with you soon.
-              </p>
+              <div className="mt-2.5 flex items-center gap-1.5 text-[#25364A] select-none animate-fadeIn">
+                <svg className="w-3.5 h-3.5 text-[#25364A] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span
+                  style={{
+                    fontFamily: "'Optima', sans-serif",
+                    fontWeight: 500,
+                    fontSize: '12px',
+                    lineHeight: '15px',
+                    color: '#25364A',
+                  }}
+                >
+                  Thank you! We will get in touch with you soon.
+                </span>
+              </div>
             )}
           </div>
         </div>

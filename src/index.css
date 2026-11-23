@@ -100,6 +100,23 @@ html, body {
 }
 
 /* ==========================================================================
+   Hero Section Responsive Background
+   ========================================================================== */
+.hero-bg {
+  background-image: url('/images/hero mobile.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 640px) {
+  .hero-bg {
+    background-image: url('/images/herosection.png');
+    background-position: center bottom;
+  }
+}
+
+/* ==========================================================================
    Figma Exact Specifications (Desktop) & Mobile Responsive Rules
    ========================================================================== */
 

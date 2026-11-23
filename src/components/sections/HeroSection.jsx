@@ -2,15 +2,7 @@ import Navbar from '../layout/Navbar';
 
 export default function HeroSection({ onClaimOffer }) {
   return (
-    <section
-      className="relative w-full h-[851px] min-h-[851px] overflow-hidden bg-black"
-      style={{
-        backgroundImage: "url('/images/hero.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center bottom',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
+    <section className="hero-bg relative w-full h-[851px] min-h-[851px] overflow-hidden bg-black">
       <div className="absolute inset-0 bg-black/40 z-0 pointer-events-none" />
 
       <Navbar onClaimOffer={onClaimOffer} />
