@@ -13,22 +13,8 @@ export default function MattressCarouselSection({ onClaimOffer }) {
             </h2>
           </div>
 
-          <div
-            className="w-full lg:w-[400px] flex-none order-1"
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              padding: '0px',
-              width: '400px',
-              maxWidth: '400px',
-              height: '56px',
-              flex: 'none',
-              order: 1,
-              flexGrow: 0,
-            }}
-          >
-            <p className="w-full font-optima font-normal text-[14px] sm:text-[16px] leading-[24px] lg:leading-[28px] text-[#17212C]">
+          <div className="w-full lg:w-[400px] lg:max-w-[400px] h-auto lg:h-[56px] flex-none order-1">
+            <p className="w-full font-optima font-normal text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] lg:leading-[28px] text-[#17212C]">
               Explore Sealy mattress families designed around different comfort and support preferences.
             </p>
           </div>
