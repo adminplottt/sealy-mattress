@@ -33,34 +33,25 @@ export default function HeroSection({ onClaimOffer }) {
             </p>
           </div>
 
-          <div className="w-full max-w-[700px] h-[58px] flex justify-center items-center flex-none order-2 self-stretch">
+          <div className="w-full max-w-[700px] h-auto sm:h-[58px] flex justify-center items-center flex-none order-2 self-stretch">
             <button
               type="button"
               onClick={onClaimOffer}
-              className="w-full sm:w-[321px] max-w-[321px] h-[58px] py-[18px] sm:py-[20px] px-4 sm:px-[26px] bg-[#FFFFFF] hover:bg-white/95 active:scale-[0.99] rounded-[4px] flex flex-row items-center justify-between gap-3 sm:gap-[30px] transition-all duration-200 cursor-pointer shadow-lg group focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+              className="w-[210px] sm:w-[321px] max-w-[215px] sm:max-w-[321px] h-[38px] sm:h-[58px] py-1.5 sm:py-[20px] px-3.5 sm:px-[26px] bg-[#FFFFFF] hover:bg-white/95 active:scale-[0.99] rounded-[4px] flex flex-row items-center justify-between gap-2 sm:gap-[30px] transition-all duration-200 cursor-pointer shadow-lg group focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
             >
               <span
-                className="w-auto sm:w-[221px] h-[17px] font-optima text-[14px] sm:text-[16px] leading-[16px] text-center uppercase text-[#25364A] whitespace-nowrap select-none flex items-center justify-center antialiased"
+                className="w-auto sm:w-[221px] font-optima text-[11px] sm:text-[16px] leading-[14px] sm:leading-[16px] text-center uppercase text-[#25364A] tracking-[0.6px] sm:tracking-[1.32px] font-[550] whitespace-nowrap select-none flex items-center justify-center antialiased"
                 style={{
-                  width: '221px',
-                  height: '17px',
                   fontFamily: "'Optima', sans-serif",
-                  fontStyle: 'normal',
                   fontWeight: 550,
-                  fontSize: '16px',
-                  lineHeight: '16px',
-                  textAlign: 'center',
-                  letterSpacing: '1.32px',
-                  textTransform: 'uppercase',
-                  color: '#25364A',
                 }}
               >
                 Claim your ₹10,000 off
               </span>
 
-              <span className="w-[18px] h-[18px] flex items-center justify-center flex-none order-1">
+              <span className="w-3.5 h-3.5 sm:w-[18px] sm:h-[18px] flex items-center justify-center flex-none order-1">
                 <svg
-                  className="w-[18px] h-[18px] transition-transform duration-200 group-hover:translate-x-1"
+                  className="w-3.5 h-3.5 sm:w-[18px] sm:h-[18px] transition-transform duration-200 group-hover:translate-x-1"
                   viewBox="0 0 18 18"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
