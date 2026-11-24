@@ -23,7 +23,7 @@ const CITIES = [
   'Other',
 ];
 
-export default function ClaimOfferModal({ isOpen, onClose }) {
+export default function ClaimOfferModal({ isOpen, onClose, onSuccess }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -118,7 +118,18 @@ export default function ClaimOfferModal({ isOpen, onClose }) {
     }
 
     setIsSubmitting(false);
-    setSubmitted(true);
+
+    try {
+      sessionStorage.setItem('sealy_lead', JSON.stringify(payload));
+    } catch (err) {
+      console.error(err);
+    }
+
+    if (onSuccess) {
+      onSuccess(payload);
+    } else {
+      window.location.href = '/thank-you';
+    }
   };
 
   const handleReset = () => {
@@ -163,7 +174,7 @@ export default function ClaimOfferModal({ isOpen, onClose }) {
             </div>
             <h3 className="font-orpheus text-3xl text-[#242424]">Offer Claimed Successfully!</h3>
             <p className="mt-3 font-optima text-sm text-[#25364A] max-w-[380px] leading-relaxed">
-              Thank you, {formData.name || 'valued customer'}. Your exclusive ₹10,000 discount voucher has been generated. Our sleep specialist will contact you shortly.
+              Upgrade to Sealy and enjoy an exclusive ₹10,000 exchange benefit on your new mattress.
             </p>
             <button
               type="button"
