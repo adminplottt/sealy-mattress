@@ -38,7 +38,7 @@ const STATS_DATA = [
   },
 ];
 
-export default function ComfortSection({ onClaimOffer }) {
+export default function ComfortSection() {
   const scrollRef = useRef(null);
   const isDown = useRef(false);
   const startX = useRef(0);

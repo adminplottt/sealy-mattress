@@ -23,7 +23,7 @@ const BULLETS = [
   'Covered by a 7–10 year Sealy warranty',
 ];
 
-export default function OrthopedicResearchSection({ onClaimOffer }) {
+export default function OrthopedicResearchSection() {
   const handleNavigateToRange = (e) => {
     e.preventDefault();
     const rangeSection = document.getElementById('range');

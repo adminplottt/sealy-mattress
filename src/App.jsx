@@ -68,10 +68,10 @@ function App() {
       <TheSealyDifference />
       <MattressCarouselSection onClaimOffer={handleOpenClaimOffer} />
       <AwardWinningSection />
-      <HeritageSection onClaimOffer={handleOpenClaimOffer} />
-      <ComfortSection onClaimOffer={handleOpenClaimOffer} />
-      <SpinalAlignmentSection onClaimOffer={handleOpenClaimOffer} />
-      <OrthopedicResearchSection onClaimOffer={handleOpenClaimOffer} />
+      <HeritageSection />
+      <ComfortSection />
+      <SpinalAlignmentSection />
+      <OrthopedicResearchSection />
       <TestimonialsSection />
       <ExchangeOfferSection onClaimOffer={handleOpenClaimOffer} />
       <Footer />

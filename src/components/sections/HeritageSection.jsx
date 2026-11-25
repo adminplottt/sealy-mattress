@@ -1,4 +1,4 @@
-export default function HeritageSection({ onClaimOffer }) {
+export default function HeritageSection() {
   const handleNavigateToRange = (e) => {
     e.preventDefault();
     const rangeSection = document.getElementById('range');

@@ -23,7 +23,7 @@ const BULLETS = [
   'Try them side by side at our Pune gallery',
 ];
 
-export default function SpinalAlignmentSection({ onClaimOffer }) {
+export default function SpinalAlignmentSection() {
   const handleNavigateToRange = (e) => {
     e.preventDefault();
     const rangeSection = document.getElementById('range');
